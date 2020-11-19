@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface ConferenceEntryProps {
   room: string;
@@ -17,7 +17,7 @@ const ConferenceEntry = (props: ConferenceEntryProps) => (
     <div>
       <h3>{props.name}</h3>
       {props.description}<br />
-      {props.authors.join(' - ')}
+      {props.authors.join(" - ")}
     </div>
   </React.Fragment>
 );
