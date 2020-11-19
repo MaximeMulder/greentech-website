@@ -1,18 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { Link } from "react-router-dom";
 
 const Header = () => (
-    <React.Fragment>
-        <div>
-            <img src='greentech-logo.png' alt='Logo GreenTech' />
-            <div>
-                <a>Présentation</a>
-                <a>Conférences</a>
-                <a>Planification</a>
-                <a>Diffusions</a>
-            </div>
-        </div>
-    </React.Fragment>
-)
+  <React.Fragment>
+    <div>
+      <img src='greentech-logo.png' alt='Logo GreenTech' />
+      <div>
+        <Link to='/'>Présentation</Link>
+        <Link to='/conferences'>Conférences</Link>
+        <Link to='/planning'>Plannification</Link>
+        <Link to='/lives'>Diffusions</Link>
+      </div>
+    </div>
+  </React.Fragment>
+);
 
 export default Header;
