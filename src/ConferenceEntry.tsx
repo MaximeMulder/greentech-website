@@ -10,26 +10,18 @@ interface ConferenceEntryProps {
     authors: string[];
 }
 
-class ConferenceEntry extends React.Component<ConferenceEntryProps> {
-    constructor(props: ConferenceEntryProps) {
-        super(props);
-    }
-
-    render() {
-        return (
-            <React.Fragment>
-                <div>
-                    {this.props.room}
-                    {this.props.date}
-                </div>
-                <div>
-                    <h3>{this.props.name}</h3>
-                    {this.props.description}<br />
-                    {this.props.authors.join(' - ')}
-                </div>
-            </React.Fragment>
-        )
-    }
-}
+const ConferenceEntry = (props: ConferenceEntryProps) => (
+    <React.Fragment>
+        <div>
+            {props.room}
+            {props.date}
+        </div>
+        <div>
+            <h3>{props.name}</h3>
+            {props.description}<br />
+            {props.authors.join(' - ')}
+        </div>
+    </React.Fragment>
+)
 
 export default ConferenceEntry;
