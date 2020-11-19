@@ -11,34 +11,21 @@ interface ConferenceEntryProps {
 }
 
 class ConferenceEntry extends React.Component<ConferenceEntryProps> {
-    room: string;
-    date: string;
-
-    name: string;
-    description: string;
-    authors: string[];
-
     constructor(props: ConferenceEntryProps) {
         super(props);
-    
-        this.room = props.room;
-        this.date = props.date;
-        this.name = props.name;
-        this.description = props.description;
-        this.authors = props.authors;
     }
 
     render() {
         return (
             <React.Fragment>
                 <div>
-                    {this.room}
-                    {this.date}
+                    {this.props.room}
+                    {this.props.date}
                 </div>
                 <div>
-                    <h3>{this.name}</h3>
-                    {this.description}<br />
-                    {this.authors.map((element, i) => {
+                    <h3>{this.props.name}</h3>
+                    {this.props.description}<br />
+                    {this.props.authors.map((element, i) => {
                         if(i == 0)
                             return element
                         else
