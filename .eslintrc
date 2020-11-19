@@ -10,5 +10,11 @@
     "react": {
       "version": "detect"
     }
+  },
+  "rules": {
+    "brace-style": "error",
+    "indent": ["warn", 2],
+    "nonblock-statement-body-position": "error",
+    "semi": "error"
   }
 }
