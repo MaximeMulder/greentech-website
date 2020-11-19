@@ -25,12 +25,7 @@ class ConferenceEntry extends React.Component<ConferenceEntryProps> {
                 <div>
                     <h3>{this.props.name}</h3>
                     {this.props.description}<br />
-                    {this.props.authors.map((element, i) => {
-                        if(i == 0)
-                            return element
-                        else
-                            return ' - ' + element
-                    })}
+                    {this.props.authors.join(' - ')}
                 </div>
             </React.Fragment>
         )
