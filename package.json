@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Website for the GreenTech Rouen 2020 conference.",
   "scripts": {
-    "start": "webpack serve --mode development --hot",
+    "start": "webpack serve --mode development --hot --open firefox",
     "build": "webpack --mode production"
   },
   "author": "GreenTech Rouen 2020 website department",
