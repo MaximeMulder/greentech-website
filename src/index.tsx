@@ -13,7 +13,7 @@ import Conferences from "./Conferences";
 import Planning from "./Planning";
 import Lives from "./Lives";
 
-import data from './data.json';
+const data: Data = require("./data.json");
 
 const App = () => (
   <Router>
@@ -21,9 +21,13 @@ const App = () => (
     <h1>GreenTech Rouen 2020</h1>
     <Switch>
       <Route exact path="/" component={Presentation} />
-      <Route path="/conferences" component={Conferences(data.conferences)} />
+      <Route path="/conferences">
+        <Conferences conferences={data.conferences} />
+      </Route>
       <Route path="/planning" component={Planning} />
-      <Route path="/lives" component={Lives(data.lives)} />
+      <Route path="/lives">
+        <Lives lives={data.lives} />
+      </Route>
     </Switch>
   </Router>
 );
