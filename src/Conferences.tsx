@@ -1,10 +1,11 @@
 import React from "react";
 import ConferenceEntry from "./ConferenceEntry";
+import {ConferenceData} from "./Data";
 
-const Conferences = () => (
+const Conferences = (datas: Array<ConferenceData>) => datas.forEach(conference => (
   <React.Fragment>
-    {<ConferenceEntry room="Room 001" date="2016-01-04 10:34:23" name="conf" description="desc" authors={["a", "b", "c"]} />}
-  </React.Fragment>
+    <ConferenceEntry {...conference} />
+  </React.Fragment>)
 );
 
 export default Conferences;

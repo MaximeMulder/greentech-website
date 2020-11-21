@@ -1,23 +1,16 @@
 import React from "react";
+import {ConferenceData} from "./Data";
 
-interface ConferenceEntryProps {
-  room: string;
-  date: string; // TODO: date type
-  name: string;
-  description: string;
-  authors: string[];
-}
-
-const ConferenceEntry = (props: ConferenceEntryProps) => (
+const ConferenceEntry = (props: ConferenceData) => (
   <React.Fragment>
     <div>
       {props.room}
-      {props.date}
+      {props.begin}
     </div>
     <div>
       <h3>{props.name}</h3>
       {props.description}<br />
-      {props.authors.join(" - ")}
+      {props.presenters.map((presenter) => presenter[0]).join(" - ")}
     </div>
   </React.Fragment>
 );

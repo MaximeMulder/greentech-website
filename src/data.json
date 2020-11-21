@@ -1,0 +1,30 @@
+{
+  "lives": [
+    {
+      "id": 1,
+      "name": "lorem ipsum",
+      "video": "blbl.mp4"
+    }
+  ],
+  "conferences": [
+    {
+      "name": "name",
+      "subtitle": "subtitle",
+      "image": "image url",
+      "description": "description",
+      "live": 1,
+      "presenters": [
+        [
+          "name",
+          "image"
+        ],
+        [
+          "name2",
+          "image2"
+        ]
+      ],
+      "begin": 12345,
+      "end": 12345
+    }
+  ]
+}
