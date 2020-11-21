@@ -9,7 +9,7 @@ interface ConferencesProps {
 const Conferences = (props: ConferencesProps) => (
   <React.Fragment>
     {props.conferences.map(conference => (
-      <ConferenceEntry {...conference} />
+      <ConferenceEntry key={conference.id} {...conference} />
     ))}
   </React.Fragment>
 );

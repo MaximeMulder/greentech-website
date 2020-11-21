@@ -8,6 +8,7 @@ const data: Data = {
   ],
   conferences: [
     {
+      id: 1,
       name: "name",
       room: "room",
       subtitle: "subtitle",
@@ -28,6 +29,7 @@ const data: Data = {
       end: 12345
     },
     {
+      id: 2,
       name: "name",
       room: "room",
       subtitle: "subtitle",
@@ -57,6 +59,7 @@ interface LiveData {
 }
 
 interface ConferenceData {
+  id: number;
   name: string;
   subtitle: string;
   image: string;
