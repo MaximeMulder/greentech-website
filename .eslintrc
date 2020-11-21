@@ -15,7 +15,6 @@
     "brace-style": "error",
     "indent": ["warn", 2],
     "jsx-quotes": "error",
-    "no-var-requires": 0,
     "nonblock-statement-body-position": "error",
     "quotes": "error",
     "semi": "error"

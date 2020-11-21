@@ -6,14 +6,12 @@ import {
   Route,
 } from "react-router-dom";
 
-import {Data} from "./Data";
+import data from "./Data";
 import Header from "./Header";
 import Presentation from "./Presentation";
 import Conferences from "./Conferences";
 import Planning from "./Planning";
 import Lives from "./Lives";
-
-const data: Data = require("./data.json");
 
 const App = () => (
   <Router>

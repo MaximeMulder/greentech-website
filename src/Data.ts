@@ -1,5 +1,57 @@
+const data: Data = {
+  lives: [
+    {
+      id: 1,
+      name: "lorem ipsum",
+      video: "blbl.mp4"
+    }
+  ],
+  conferences: [
+    {
+      name: "name",
+      room: "room",
+      subtitle: "subtitle",
+      image: "image url",
+      description: "description",
+      live: 1,
+      presenters: [
+        [
+          "name",
+          "image"
+        ],
+        [
+          "name2",
+          "image2"
+        ]
+      ],
+      begin: 12345,
+      end: 12345
+    },
+    {
+      name: "name",
+      room: "room",
+      subtitle: "subtitle",
+      image: "image url",
+      description: "description",
+      live: 1,
+      presenters: [
+        [
+          "name",
+          "image"
+        ],
+        [
+          "name2",
+          "image2"
+        ]
+      ],
+      begin: 12345,
+      end: 12345
+    }
+  ]
+};
+
 interface LiveData {
-  id: bigint;
+  id: number;
   name: string;
   video: string;
 }
@@ -10,10 +62,10 @@ interface ConferenceData {
   image: string;
   description: string;
   room: string;
-  live: bigint; // ID unique de Live
+  live: number; // ID unique de Live
   presenters: Array<[string, string]>;
-  begin: bigint; // Timestamp
-  end: bigint; //Timestamp
+  begin: number; // Timestamp
+  end: number; //Timestamp
 }
 
 interface Data {
@@ -21,4 +73,5 @@ interface Data {
   conferences: Array<ConferenceData>;
 }
 
+export default data;
 export {Data, ConferenceData, LiveData};
