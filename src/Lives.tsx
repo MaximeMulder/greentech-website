@@ -1,6 +1,11 @@
 import React from "react";
+import {LiveData} from "./Data";
 
-const Lives = () => (
+interface LivesProps {
+  lives: Array<LiveData>;
+}
+
+const Lives = (props: LivesProps) => (
   <React.Fragment>
   </React.Fragment>
 );
