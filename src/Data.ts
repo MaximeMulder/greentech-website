@@ -3,7 +3,12 @@ const data: Data = {
     {
       id: 1,
       name: "lorem ipsum",
-      video: "blbl.mp4"
+      video: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+    },
+    {
+      id: 2,
+      name: "lorem ipsum",
+      video: "https://www.youtube.com/embed/Q16KpquGsIc"
     }
   ],
   conferences: [
