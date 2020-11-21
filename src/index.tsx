@@ -13,7 +13,7 @@ import Conferences from "./Conferences";
 import Planning from "./Planning";
 import Lives from "./Lives";
 
-const data: Data = require("./data.json");
+import data from './data.json';
 
 const App = () => (
   <Router>
