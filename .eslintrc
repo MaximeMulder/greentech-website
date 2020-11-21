@@ -12,11 +12,26 @@
     }
   },
   "rules": {
+    "array-bracket-spacing": "error",
+    "block-spacing": "error",
     "brace-style": "error",
-    "indent": ["warn", 2],
+    "comma-spacing": "error",
+    "eol-last": "error",
+    "func-call-spacing": "error",
+    "indent": ["error", 2],
     "jsx-quotes": "error",
+    "key-spacing": ["error", { "mode": "minimum" }],
+    "keyword-spacing": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1, "maxBOF": 0 }],
+    "no-trailing-spaces": "error",
+    "no-whitespace-before-property": "error",
     "nonblock-statement-body-position": "error",
-    "quotes": "error",
-    "semi": "error"
+    "object-curly-spacing": ["error", "always"],
+    "padded-blocks": "error",
+    "quotes": ["error", "single"],
+    "semi": "error",
+    "space-before-blocks": "error",
+    "space-in-parens": "error",
+    "space-infix-ops": "error"
   }
 }
