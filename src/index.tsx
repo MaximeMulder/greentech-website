@@ -6,6 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 
+import data from "./Data";
 import Header from "./Header";
 import Presentation from "./Presentation";
 import Conferences from "./Conferences";
@@ -18,9 +19,13 @@ const App = () => (
     <h1>GreenTech Rouen 2020</h1>
     <Switch>
       <Route exact path="/" component={Presentation} />
-      <Route path="/conferences" component={Conferences} />
+      <Route path="/conferences">
+        <Conferences conferences={data.conferences} />
+      </Route>
       <Route path="/planning" component={Planning} />
-      <Route path="/lives" component={Lives} />
+      <Route path="/lives">
+        <Lives lives={data.lives} />
+      </Route>
     </Switch>
   </Router>
 );

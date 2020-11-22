@@ -1,9 +1,16 @@
 import React from "react";
 import ConferenceEntry from "./ConferenceEntry";
+import {ConferenceData} from "./Data";
 
-const Conferences = () => (
+interface ConferencesProps {
+  conferences: Array<ConferenceData>;
+}
+
+const Conferences = (props: ConferencesProps) => (
   <React.Fragment>
-    {<ConferenceEntry room="Room 001" date="2016-01-04 10:34:23" name="conf" description="desc" authors={["a", "b", "c"]} />}
+    {props.conferences.map(conference => (
+      <ConferenceEntry key={conference.id} {...conference} />
+    ))}
   </React.Fragment>
 );
 
