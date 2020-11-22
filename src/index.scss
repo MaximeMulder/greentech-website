@@ -25,7 +25,6 @@ $red: #FF6B6B;
   src: url("./fonts/SonderSerif-BoldRough.otf") format("otf");
 }
 
-
 @font-face {
   font-family: "Sonder Sans Rough";
   src: url("./fonts/SonderSans-BlackRough.otf") format("otf");
@@ -34,4 +33,9 @@ $red: #FF6B6B;
 @font-face {
   font-family: "Sonder Sans Rough";
   src: url("./fonts/SonderSans-BlackRough.otf") format("otf");
+}
+
+body {
+  margin: 0;
+  font-family: "Abel", serif;
 }

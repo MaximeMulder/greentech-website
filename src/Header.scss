@@ -1,0 +1,30 @@
+@import "./index.scss";
+
+header {
+  top: 0;
+  height: 8vh;
+  background-color: $grey;
+  font-size: 2vh;
+
+  img {
+    float: left;
+    width: 8vh;
+  }
+
+  div {
+    float: right;
+
+    a {
+      display: inline-block;
+      color: $white;
+      transition: background-color .5s;
+      text-decoration: none;
+      padding: 2.8vh 2vh;
+
+      &:hover {
+        background-color: $black;
+        text-decoration: underline;
+      }
+    }
+  }
+}

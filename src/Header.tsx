@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Header.scss';
 
 const Header = () => (
   <React.Fragment>
-    <div>
+    <header>
       <img src="greentech-logo.png" alt="Logo GreenTech" />
       <div>
         <Link to="/">Présentation</Link>
@@ -11,7 +12,7 @@ const Header = () => (
         <Link to="/planning">Plannification</Link>
         <Link to="/lives">Diffusions</Link>
       </div>
-    </div>
+    </header>
   </React.Fragment>
 );
 
