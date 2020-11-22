@@ -8,7 +8,7 @@ interface LivesProps {
   lives: Array<LiveData>;
 }
 
-const Lives = (props: LivesProps) => (
+const Lives = (props: LivesProps): JSX.Element => (
   <React.Fragment>
     {props.lives.map(live => (
       <React.Fragment key={live.id}>

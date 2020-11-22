@@ -5,7 +5,7 @@ interface LiveEntryProps {
     live: LiveData;
 }
 
-const LiveEntry = (props: LiveEntryProps) => (
+const LiveEntry = (props: LiveEntryProps): JSX.Element => (
   <React.Fragment>
     <iframe title={props.live.name} src={props.live.video} width="720" height="480"></iframe>
   </React.Fragment>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.scss';
 
-const Header = () => (
+const Header = (): JSX.Element => (
   <React.Fragment>
     <header>
       <img src="greentech-logo.png" alt="Logo GreenTech" />
