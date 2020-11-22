@@ -1,17 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-} from "react-router-dom";
+} from 'react-router-dom';
 
-import data from "./Data";
-import Header from "./Header";
-import Presentation from "./Presentation";
-import Conferences from "./Conferences";
-import Planning from "./Planning";
-import Lives from "./Lives";
+import data from './Data';
+import Header from './Header';
+import Presentation from './Presentation';
+import Conferences from './Conferences';
+import Planning from './Planning';
+import Lives from './Lives';
 
 const App = () => (
   <Router>
@@ -32,5 +32,5 @@ const App = () => (
 
 ReactDOM.render(
   <App />,
-  document.getElementById("root")
+  document.getElementById('root')
 );

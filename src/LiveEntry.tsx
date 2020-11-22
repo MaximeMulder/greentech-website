@@ -1,5 +1,5 @@
-import React from "react";
-import {LiveData} from "./Data";
+import React from 'react';
+import { LiveData } from './Data';
 
 interface LiveEntryProps {
     live: LiveData;

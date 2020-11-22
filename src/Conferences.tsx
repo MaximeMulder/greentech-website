@@ -1,6 +1,6 @@
-import React from "react";
-import ConferenceEntry from "./ConferenceEntry";
-import {ConferenceData} from "./Data";
+import React from 'react';
+import ConferenceEntry from './ConferenceEntry';
+import { ConferenceData } from './Data';
 
 interface ConferencesProps {
   conferences: Array<ConferenceData>;
