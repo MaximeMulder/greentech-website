@@ -27,7 +27,7 @@
     "no-whitespace-before-property": "error",
     "nonblock-statement-body-position": "error",
     "object-curly-spacing": ["error", "always"],
-    "padded-blocks": "error",
+    "padded-blocks": ["error", "never"],
     "quotes": ["error", "single"],
     "semi": "error",
     "space-before-blocks": "error",
