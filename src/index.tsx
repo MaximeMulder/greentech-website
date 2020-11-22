@@ -16,7 +16,7 @@ import Lives from './Lives';
 const App = () => (
   <Router>
     <Header />
-    <h1>GreenTech Rouen 2020</h1>
+    {/*<h1>GreenTech Rouen 2020</h1>*/}
     <Switch>
       <Route exact path="/" component={Presentation} />
       <Route path="/conferences">
