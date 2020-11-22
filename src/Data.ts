@@ -2,32 +2,32 @@ const data: Data = {
   lives: [
     {
       id: 1,
-      name: "lorem ipsum",
-      video: "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+      name: 'lorem ipsum',
+      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'
     },
     {
       id: 2,
-      name: "lorem ipsum",
-      video: "https://www.youtube.com/embed/Q16KpquGsIc"
+      name: 'lorem ipsum',
+      video: 'https://www.youtube.com/embed/Q16KpquGsIc'
     }
   ],
   conferences: [
     {
       id: 1,
-      name: "name",
-      room: "room",
-      subtitle: "subtitle",
-      image: "image url",
-      description: "description",
+      name: 'name',
+      room: 'room',
+      subtitle: 'subtitle',
+      image: 'image url',
+      description: 'description',
       live: 1,
       presenters: [
         [
-          "name",
-          "image"
+          'name',
+          'image'
         ],
         [
-          "name2",
-          "image2"
+          'name2',
+          'image2'
         ]
       ],
       begin: 12345,
@@ -35,20 +35,20 @@ const data: Data = {
     },
     {
       id: 2,
-      name: "name",
-      room: "room",
-      subtitle: "subtitle",
-      image: "image url",
-      description: "description",
+      name: 'name',
+      room: 'room',
+      subtitle: 'subtitle',
+      image: 'image url',
+      description: 'description',
       live: 1,
       presenters: [
         [
-          "name",
-          "image"
+          'name',
+          'image'
         ],
         [
-          "name2",
-          "image2"
+          'name2',
+          'image2'
         ]
       ],
       begin: 12345,
@@ -82,4 +82,4 @@ interface Data {
 }
 
 export default data;
-export {Data, ConferenceData, LiveData};
+export { Data, ConferenceData, LiveData };

@@ -1,5 +1,5 @@
-import React from "react";
-import {ConferenceData} from "./Data";
+import React from 'react';
+import { ConferenceData } from './Data';
 
 const ConferenceEntry = (props: ConferenceData) => (
   <React.Fragment>
@@ -10,7 +10,7 @@ const ConferenceEntry = (props: ConferenceData) => (
     <div>
       <h3>{props.name}</h3>
       {props.description}<br />
-      {props.presenters.map((presenter) => presenter[0]).join(" - ")}
+      {props.presenters.map((presenter) => presenter[0]).join(' - ')}
     </div>
   </React.Fragment>
 );
