@@ -1,0 +1,41 @@
+$green: #34F6C1;
+$black: #2D2D2A;
+$grey: #808782;
+$white: #ffffff;
+$purple: #7D80DA;
+$red: #FF6B6B;
+
+@font-face {
+  font-family: "Abel";
+  src: url("./fonts/Abel-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Bondi";
+  src: url("./fonts/Bondi.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Sonder Slab";
+  src: url("./fonts/SonderSerif-Bold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Sonder Slab Rough";
+  src: url("./fonts/SonderSerif-BoldRough.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Sonder Sans Rough";
+  src: url("./fonts/SonderSans-BlackRough.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Sonder Sans Rough";
+  src: url("./fonts/SonderSans-BlackRough.otf") format("otf");
+}
+
+body {
+  margin: 0;
+  font-family: "Abel", serif;
+}

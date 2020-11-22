@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Planning = () => (
+const Planning = (): JSX.Element => (
   <React.Fragment>
   </React.Fragment>
 );
