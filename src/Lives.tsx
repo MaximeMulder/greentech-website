@@ -18,11 +18,11 @@ const Lives = (props: LivesProps): JSX.Element => (
     <Switch>
       {props.lives.map(live => (
         <Route key={live.id} path={'/lives/' + live.id}>
-          <LiveEntry {...{ live }} />
+          <LiveEntry key={live.id} {...live} />
         </Route>
       ))}
       <Route path="/lives">
-        <LiveEntry live={props.lives[0]} />
+        <LiveEntry key={props.lives[0].id} {...props.lives[0]} />
       </Route>
     </Switch>
   </React.Fragment>

@@ -40,7 +40,7 @@ const data: Data = {
       subtitle: 'subtitle',
       image: 'image url',
       description: 'description',
-      live: 1,
+      live: 2,
       presenters: [
         [
           'name',
