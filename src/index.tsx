@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
 
-import data from './Data';
+import data from './data';
 import Header from './Header';
 import Presentation from './Presentation';
 import Conferences from './Conferences';
