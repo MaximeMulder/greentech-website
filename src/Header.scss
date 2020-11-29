@@ -11,21 +11,23 @@ header {
     width: 8vh;
   }
 
-  .svg {
+  #burgerToggle {
     display: none;
+    float: right;
     padding: 2vh;
+    cursor: pointer;
 
     @media screen and (max-width: 768px) {
       display: inline-block;
-      float: right;
 
-      &:active ~ nav, &:hover ~ nav {
+      &.pressed ~ nav {
         margin-right: 0;
       }
     }
   }
 
   > nav {
+    margin-top: 8vh;
     float: right;
 
     a {
@@ -48,10 +50,6 @@ header {
       width: 15vh;
       margin-right: -15vh;
       transition: margin-right .5s;
-
-      &:hover {
-        margin-right: 0;
-      }
 
       a {
         display: block;
