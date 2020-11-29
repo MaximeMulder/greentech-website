@@ -11,7 +11,7 @@ const Conference = (props: ConferenceProps): ReactElement => {
     <article>
       <div className="left">
         <div className="roomName">
-          {getConferenceLive(props.conference)}
+          {getConferenceLive(props.conference).name}
         </div>
         <div className="date">
           {date.toLocaleDateString()}

@@ -1,13 +1,12 @@
 import React, { ReactElement } from 'react';
 import data, { getLiveConferences } from './data';
-import RoomPlanningEntry from './RoomPlanningEntry';
+import PlanningLive from './PlanningLive';
 
 const Planning = (): ReactElement => (
   <React.Fragment>
     {data.lives.map((live) => (
       <React.Fragment key={live.id}>
-        {live.name}
-        <RoomPlanningEntry conferences={getLiveConferences(live)} />
+        <PlanningLive live={live} />
       </React.Fragment>
     ))}
   </React.Fragment>

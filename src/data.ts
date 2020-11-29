@@ -22,15 +22,15 @@ export interface ConferenceData {
 }
 
 const data: Data = {
-  lives: [
+  lives: [ // = rooms
     {
       id: 0,
-      name: 'lorem ipsum',
+      name: 'Room 1',
       video: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'
     },
     {
       id: 1,
-      name: 'lorem ipsum',
+      name: 'Room 2',
       video: 'https://www.youtube.com/embed/Q16KpquGsIc'
     }
   ],
