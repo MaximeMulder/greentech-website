@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
-const Presentation = (): JSX.Element => (
+const Presentation = (): ReactElement => (
   <React.Fragment>
   </React.Fragment>
 );

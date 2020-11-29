@@ -1,22 +1,16 @@
-import React from 'react';
-import data, { ConferenceData } from './Data';
+import React, { ReactElement } from 'react';
+import data, { getLiveConferences } from './data';
 import RoomPlanningEntry from './RoomPlanningEntry';
 
-interface ConfRoomDic {
-  [key: string]: ConferenceData[]
-}
-
-const Planning = (): JSX.Element => {
-
-  const rooms: ConfRoomDic = { 'room': [] };
-  data.conferences.map(e => rooms[e.room].push(e));
-  return <React.Fragment>
-    {Object.values(rooms).map((e, i) =>
-      'Salle ' + i +
-      <RoomPlanningEntry key={i} conferences={e} />
-    )}
-  </React.Fragment>;
-
-};
+const Planning = (): ReactElement => (
+  <React.Fragment>
+    {data.lives.map((live) => (
+      <React.Fragment key={live.id}>
+        {live.name}
+        <RoomPlanningEntry conferences={getLiveConferences(live)} />
+      </React.Fragment>
+    ))}
+  </React.Fragment>
+);
 
 export default Planning;
