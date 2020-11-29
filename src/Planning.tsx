@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import data, { getLiveConferences } from './data';
+import data from './data';
 import PlanningLive from './PlanningLive';
 
 const Planning = (): ReactElement => (
