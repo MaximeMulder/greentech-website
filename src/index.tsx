@@ -12,6 +12,7 @@ import Presentation from './Presentation';
 import Conferences from './Conferences';
 import Planning from './Planning';
 import Lives from './Lives';
+import './index.scss';
 
 const App = () => (
   <Router>
