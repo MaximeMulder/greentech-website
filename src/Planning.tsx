@@ -5,9 +5,7 @@ import PlanningLive from './PlanningLive';
 const Planning = (): ReactElement => (
   <React.Fragment>
     {data.lives.map((live) => (
-      <React.Fragment key={live.id}>
-        <PlanningLive live={live} />
-      </React.Fragment>
+      <PlanningLive key={live.id} live={live} />
     ))}
   </React.Fragment>
 );
