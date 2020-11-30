@@ -32,12 +32,17 @@ const data: Data = {
       id: 1,
       name: 'Room 2',
       video: 'https://www.youtube.com/embed/Q16KpquGsIc'
+    },
+    {
+      id: 2,
+      name: 'Room 3',
+      video: 'https://www.youtube.com/embed/Q16KpquGsIc'
     }
   ],
   conferences: [
     {
       id: 0,
-      name: 'name',
+      name: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       image: 'image url',
       subtitle: 'subtitle',
       description: 'description',
@@ -46,8 +51,8 @@ const data: Data = {
         'name',
         'name2',
       ],
-      begin: 1606082400,
-      end: 1606086000
+      begin: 1606748400,
+      end: 1606752000
     },
     {
       id: 1,
@@ -60,8 +65,8 @@ const data: Data = {
         'name',
         'name2',
       ],
-      begin: 1607983200,
-      end: 1607986800
+      begin: 1606726800,
+      end: 1606730400
     }
   ]
 };
