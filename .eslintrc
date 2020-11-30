@@ -36,6 +36,7 @@
     "quotes": ["error", "single"],
     "react/jsx-closing-tag-location": "error",
     "react/jsx-no-useless-fragment": "error",
+    "react/jsx-tag-spacing": "error",
     "react/jsx-wrap-multilines": "error",
     "semi": "error",
     "space-before-blocks": "error",
