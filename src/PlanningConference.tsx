@@ -6,9 +6,14 @@ interface PlanningConferenceProps {
 }
 
 const PlanningConference = (props: PlanningConferenceProps): ReactElement => {
-  // TODO : y calculus
+  const hour = new Date(props.conference.begin * 1000).getHours();
+  console.log(hour);
+  const styles = {
+    marginTop: (hour - 9) * 25 + 'px'
+  };
+
   return (
-    <div> {/* style={}> */}
+    <div className="conference" style={styles}>
       <h2 className="conferenceTitle">
         {props.conference.name}
       </h2>

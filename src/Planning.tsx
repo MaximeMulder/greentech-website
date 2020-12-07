@@ -1,13 +1,14 @@
 import React, { ReactElement } from 'react';
 import data from './data';
 import PlanningLive from './PlanningLive';
+import './Planning.scss';
 
 const Planning = (): ReactElement => (
-  <React.Fragment>
+  <main id="planning">
     {data.lives.map((live) => (
       <PlanningLive key={live.id} live={live} />
     ))}
-  </React.Fragment>
+  </main>
 );
 
 export default Planning;

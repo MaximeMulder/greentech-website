@@ -1,0 +1,54 @@
+@import "./assets.scss";
+
+.roomComponent {
+  width: 26.66%;
+  margin: 5% 2.5% 0 2.5%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  background-color: $grey;
+  color: $black;
+
+  &:first-child {
+    margin-left: 5%;
+  }
+
+  &:last-child {
+    margin-right: 5%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    margin: 2.5% 5% 2.5% 5%;
+
+    &:first-child {
+      margin-top: 5%;
+    }
+  }
+
+  .conference {
+    position: absolute;
+    background-color: $black;
+    color: $white;
+    padding: 1em;
+    margin-left: 10%;
+    max-width: 70%;
+
+    .conferenceTitle {
+      margin: 0;
+    }
+  }
+
+  table {
+    margin: 10px;
+    border-collapse: collapse;
+
+    tr {
+      height: 25px;
+
+      &:empty::before {
+        content: "-";
+      }
+    }
+  }
+}
