@@ -17,7 +17,6 @@ import './index.scss';
 const App = () => (
   <Router>
     <Header />
-    {/*<h1>GreenTech Rouen 2020</h1>*/}
     <Switch>
       <Route exact path="/" component={Presentation} />
       <Route path="/conferences">
