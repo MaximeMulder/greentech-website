@@ -256,7 +256,7 @@ const data: Data = {
     },
     {
       id: 15,
-      title: 'La conférence d\'Orel et Clem',
+      title: 'La mobility-as-a-service',
       subtitle: 'subtitle',
       description: 'description',
       image: 'image url',
