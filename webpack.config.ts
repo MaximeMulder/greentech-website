@@ -16,7 +16,7 @@ const config: Configuration = {
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.(jpg|png|svg|woff|woff2|eot|ttf|otf)$/,
         loader: 'file-loader'
       }
     ],
