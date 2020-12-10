@@ -30,7 +30,8 @@ const config: Configuration = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
+      favicon: './src/images/logo-light.svg',
     }),
   ]
 };
