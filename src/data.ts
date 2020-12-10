@@ -1,270 +1,270 @@
 export interface Data {
-  lives: LiveData[];
+  rooms: RoomData[];
   conferences: ConferenceData[];
 }
 
-export interface LiveData {
+export interface RoomData {
   id: number;
   name: string;
-  video: string;
+  live: string;
 }
 
 export interface ConferenceData {
   id: number;
-  name: string;
-  image: string;
+  title: string;
   subtitle: string;
   description: string;
+  image: string;
   presenters: string[];
-  live: number;
+  room: number;
   begin: number;
   end: number;
 }
 
 const data: Data = {
-  lives: [
+  rooms: [
     {
       id: 0,
       name: 'Amphithéâtre',
-      video: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'
+      live: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'
     },
     {
       id: 1,
       name: 'Salle 1',
-      video: 'https://www.youtube.com/embed/Q16KpquGsIc'
+      live: 'https://www.youtube.com/embed/Q16KpquGsIc'
     },
     {
       id: 2,
       name: 'Salle 2',
-      video: 'https://www.youtube.com/embed/Q16KpquGsIc'
+      live: 'https://www.youtube.com/embed/Q16KpquGsIc'
     }
   ],
   conferences: [
     {
       id: 0,
-      name: 'Pollution numérique',
-      image: 'image url',
+      title: 'Pollution numérique',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Adrien Dossang',
         'Arthur Delamare',
         'Dorian Lecoeur',
         'Enzo Billis',
       ],
-      live: 0,
+      room: 0,
       begin: 1609844400,
       end: 1609849800
     },
     {
       id: 1,
-      name: 'Cloud computing',
-      image: 'image url',
+      title: 'Cloud computing',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Antoine Savalle',
         'Maxime Mulder',
         'Paul Brouet',
         'Pierre Hamel',
       ],
-      live: 1,
+      room: 1,
       begin: 1609844400,
       end: 1609849800
     },
     {
       id: 2,
-      name: 'Cybersécurité des smart city',
-      image: 'image url',
+      title: 'Cybersécurité des smart city',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Julien Zolli',
         'Nicolas Van-hove',
       ],
-      live: 2,
+      room: 2,
       begin: 1609853400,
       end: 1609855800
     },
     {
       id: 3,
-      name: 'Fluidifier le trafic',
-      image: 'image url',
+      title: 'Fluidifier le trafic',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Kévin Huard',
         'Corentin Dragée',
       ],
-      live: 2,
+      room: 2,
       begin: 1609855800,
       end: 1609858800
     },
     {
       id: 4,
-      name: 'Télécommunications',
-      image: 'image url',
+      title: 'Télécommunications',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Victor Personnettaz',
         'Yanis Mercier',
       ],
-      live: 1,
+      room: 1,
       begin: 1609855800,
       end: 1609858800
     },
     {
       id: 5,
-      name: 'Énergies',
-      image: 'image url',
+      title: 'Énergies',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Paul Fontaine',
       ],
-      live: 0,
+      room: 0,
       begin: 1609840800,
       end: 1609842600
     },
     {
       id: 6,
-      name: 'Liberté des citoyens',
-      image: 'image url',
+      title: 'Liberté des citoyens',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Etienne Jouvançon',
         'Jean-Marc Meschin',
         'Julien His',
         'Romain Jouatte',
       ],
-      live: 2,
+      room: 2,
       begin: 1609844400,
       end: 1609849800
     },
     {
       id: 7,
-      name: 'Fermes urbaines',
-      image: 'image url',
+      title: 'Fermes urbaines',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Baptiste Pimont',
         'Bryan Quatremare',
         'Elian Hamon',
       ],
-      live: 0,
+      room: 0,
       begin: 1609837500,
       end: 1609840800
     },
     {
       id: 8,
-      name: 'GreenIT au sein de la DSI',
-      image: 'image url',
+      title: 'GreenIT au sein de la DSI',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Alexandre Dassonville',
         'Antonin Paul',
       ],
-      live: 0,
+      room: 0,
       begin: 1609853400,
       end: 1609855800
     },
     {
       id: 9,
-      name: 'Voitures autonomes',
-      image: 'image url',
+      title: 'Voitures autonomes',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Antoine Morlet',
       ],
-      live: 2,
+      room: 2,
       begin: 1609840800,
       end: 1609842600
     },
     {
       id: 10,
-      name: 'Gestion des flux',
-      image: 'image url',
+      title: 'Gestion des flux',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Maximilien Fonteyn',
         'Virgile Marand',
         'Yoann Bernard',
       ],
-      live: 1,
+      room: 1,
       begin: 1609837500,
       end: 1609840800
     },
     {
       id: 11,
-      name: 'Smart harbor',
-      image: 'image url',
+      title: 'Smart harbor',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Gabriel Lesourd',
       ],
-      live: 1,
+      room: 1,
       begin: 1609840800,
       end: 1609842600
     },
     {
       id: 12,
-      name: 'Reconnaissance des iris',
-      image: 'image url',
+      title: 'Reconnaissance des iris',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Alaeddine Abdelkafi',
         'Amal Ayadi',
         'Mahdi Chaabouni',
       ],
-      live: 2,
+      room: 2,
       begin: 1609837500,
       end: 1609840800
     },
     {
       id: 13,
-      name: 'Propreté et durabilité',
-      image: 'image url',
+      title: 'Propreté et durabilité',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Nils Montier',
       ],
-      live: 1,
+      room: 1,
       begin: 1609853400,
       end: 1609854600
     },
     {
       id: 14,
-      name: 'Smart buildings',
-      image: 'image url',
+      title: 'Smart buildings',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Célia Henry',
       ],
-      live: 1,
+      room: 1,
       begin: 1609854600,
       end: 1609855800
     },
     {
       id: 15,
-      name: 'La conférence d\'Orel et Clem',
-      image: 'image url',
+      title: 'La conférence d\'Orel et Clem',
       subtitle: 'subtitle',
       description: 'description',
+      image: 'image url',
       presenters: [
         'Aurélien Pottier',
         'Clément Lesage',
       ],
-      live: 0,
+      room: 0,
       begin: 1609855800,
       end: 1609858800
     },
@@ -275,16 +275,16 @@ export function getConference(id: number): ConferenceData {
   return data.conferences.find((conference) => conference.id === id);
 }
 
-export function getLive(id: number): LiveData {
-  return data.lives.find((live) => live.id === id);
+export function getRoom(id: number): RoomData {
+  return data.rooms.find((room) => room.id === id);
 }
 
-export function getConferenceLive(conference: ConferenceData): LiveData {
-  return data.lives.find((live) => live.id === conference.live);
+export function getConferenceRoom(conference: ConferenceData): RoomData {
+  return data.rooms.find((room) => room.id === conference.room);
 }
 
-export function getLiveConferences(live: LiveData): ConferenceData[] {
-  return data.conferences.filter((conference) => conference.live === live.id);
+export function getRoomConferences(room: RoomData): ConferenceData[] {
+  return data.conferences.filter((conference) => conference.room === room.id);
 }
 
 export default data;

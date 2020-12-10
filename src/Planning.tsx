@@ -1,14 +1,14 @@
 import React, { ReactElement } from 'react';
 import data from './data';
-import PlanningLive from './PlanningLive';
+import PlanningRoom from './PlanningRoom';
 import './Planning.scss';
 
 const Planning = (): ReactElement => (
-  <main id="planning">
-    {data.lives.map((live) => (
-      <PlanningLive key={live.id} live={live} />
+  <div className="planning">
+    {data.rooms.map((room) => (
+      <PlanningRoom key={room.id} {...{ room }} />
     ))}
-  </main>
+  </div>
 );
 
 export default Planning;

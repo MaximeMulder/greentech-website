@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { ConferenceData, getConferenceLive } from './data';
+import { ConferenceData, getConferenceRoom } from './data';
 
 interface ConferenceProps {
   conference: ConferenceData;
@@ -11,7 +11,7 @@ const Conference = (props: ConferenceProps): ReactElement => {
     <article>
       <div className="left">
         <div className="roomName">
-          {getConferenceLive(props.conference).name}
+          {getConferenceRoom(props.conference).name}
         </div>
         <div className="date">
           {date.toLocaleDateString()}
@@ -20,8 +20,8 @@ const Conference = (props: ConferenceProps): ReactElement => {
         </div>
       </div>
       <div>
-        <div className="name">{props.conference.name}</div>
-        <div className="description">{props.conference.description}</div>
+        <div className="conference-title">{props.conference.title}</div>
+        <div className="conference-description">{props.conference.description}</div>
         {props.conference.presenters.join(' - ')}
       </div>
     </article>

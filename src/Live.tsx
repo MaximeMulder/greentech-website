@@ -1,14 +1,14 @@
 import React, { ReactElement } from 'react';
 import { useParams } from 'react-router';
-import { getLiveConferences, getLive } from './data';
+import { getRoomConferences, getRoom } from './data';
 
 interface LiveParams {
-  live: string,
+  room: string,
 }
 
 function Live(): ReactElement {
-  const live = getLive(Number(useParams<LiveParams>().live));
-  const time_until_live = getLiveConferences(live)[0].begin - Math.floor(Date.now() / 1000);
+  const room = getRoom(Number(useParams<LiveParams>().room));
+  const time_until_live = getRoomConferences(room)[0].begin - Math.floor(Date.now() / 1000);
   console.log(time_until_live);
   const days = Math.floor(time_until_live / 86400);
   let remainder = time_until_live % 86400;
@@ -18,7 +18,7 @@ function Live(): ReactElement {
   const seconds = remainder % 60;
   return (
     <React.Fragment>
-      <iframe title={live.name} src={live.video} width="720" height="480"></iframe>
+      <iframe title={room.name} src={room.live} width="720" height="480"></iframe>
     La conférence débute dans : {days ? days + ' J' : ''} {hours ? hours + ' H' : ''} {minutes} MIN {seconds} SEC
     </React.Fragment>
   );

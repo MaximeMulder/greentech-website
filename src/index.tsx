@@ -24,7 +24,7 @@ const App = () => (
       </Route>
       <Route path="/planning" component={Planning} />
       <Route path="/lives">
-        <Lives lives={data.lives} />
+        <Lives rooms={data.rooms} />
       </Route>
     </Switch>
   </Router>

@@ -1,6 +1,6 @@
 @import "./include.scss";
 
-.roomComponent {
+/* .roomComponent {
   width: 26.66%;
   margin: 5% 2.5% 0 2.5%;
   display: inline-block;
@@ -51,4 +51,12 @@
       }
     }
   }
+} */
+
+.planning {
+    display: flex;
+
+    &-group {
+        margin-bottom: 50px;
+    }
 }

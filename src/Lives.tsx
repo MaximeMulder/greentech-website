@@ -1,18 +1,18 @@
 import React, { ReactElement } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { LiveData } from './Data';
+import { RoomData } from './Data';
 import Live from './Live';
 
 interface LivesProps {
-  lives: LiveData[];
+  rooms: RoomData[];
 }
 
 const Lives = (props: LivesProps): ReactElement => (
   <React.Fragment>
-    {props.lives.map((live) => (
-      <React.Fragment key={live.id}>
-        <Link to={'/lives/' + live.id}>{live.name}</Link><br />
+    {props.rooms.map((room) => (
+      <React.Fragment key={room.id}>
+        <Link to={'/lives/' + room.id}>{room.name}</Link><br />
       </React.Fragment>
     ))}
     <Switch>
