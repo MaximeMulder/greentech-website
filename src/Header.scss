@@ -1,9 +1,9 @@
-@import "./assets.scss";
+@import "./include.scss";
 
 header {
   top: 0;
   height: 8vh;
-  background-color: $grey;
+  background-color: $black;
   font-size: 2vh;
 
   img {
