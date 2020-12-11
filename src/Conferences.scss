@@ -32,6 +32,11 @@ article {
   }
 }
 
+.conference-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -43,9 +48,10 @@ article {
   display: flex;
   flex-direction: row-reverse;
 
-  .modal-content {
-    background-color: white;
+  .modal-block {
+    background-color: $white;
     flex-grow: 1;
+    text-align: center;
   }
 
   @media (max-width: 800px) {
@@ -57,7 +63,49 @@ article {
     .modal-around {
       background-color: black;
       opacity: 0.5;
-      flex-grow: 2;
+      flex-grow: 5;
     }
   }
+}
+
+.modal-content {
+  text-align: left;
+  @media (max-width: 800px) {
+    text-align: center;
+  }
+  
+  padding: 4vh;
+}
+
+.modal-close {
+  text-align: right;
+}
+
+.modal-close-button {
+  background-color: $white;
+  border: 2px solid $black;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 14px;
+  padding-right: 9px;
+  padding-bottom: 6px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: $green;
+  text-align: center;
+  color: $white;
+  font-weight: bold;
+  text-decoration: none;
+
+  border: 2px solid $green;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px $black;
+  
+  margin: 1%;
+  padding: 1vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
 }
