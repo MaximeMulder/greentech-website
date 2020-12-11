@@ -31,3 +31,33 @@ article {
     }
   }
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+
+  .modal-content {
+    background-color: white;
+    flex-grow: 1;
+  }
+
+  @media (max-width: 800px) {
+    .modal-around {
+      display: none;
+    }
+  }
+  @media (min-width: 801px) {
+    .modal-around {
+      background-color: black;
+      opacity: 0.5;
+      flex-grow: 2;
+    }
+  }
+}
