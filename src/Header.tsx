@@ -1,5 +1,5 @@
 import React, { Component, ReactElement } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import Logo from './images/logo-dark.svg';
 import './Header.scss';
@@ -33,10 +33,10 @@ class Header extends Component<unknown, HeaderState> {
           </svg>
         </div>
         <nav onClick={this.handleClick}>
-          <Link to="/">PRÉSENTATION</Link>
-          <Link to="/conferences">CONFÉRENCES</Link>
-          <Link to="/planning">PLANNIFICATION</Link>
-          <Link to="/lives">DIFFUSIONS</Link>
+          <NavLink className="header-link" exact to="/">PRESENTATION</NavLink>
+          <NavLink className="header-link" to="/conferences">CONFERENCES</NavLink>
+          <NavLink className="header-link" to="/planning">PLANNIFICATION</NavLink>
+          <NavLink className="header-link" to="/lives">DIFFUSIONS</NavLink>
         </nav>
       </header>
     );

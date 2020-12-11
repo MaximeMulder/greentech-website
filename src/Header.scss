@@ -35,11 +35,6 @@ header {
       transition: background-color .5s;
       text-decoration: none;
       padding: 2.8vh 2vh;
-
-      &:hover {
-        background-color: $black;
-        text-decoration: underline;
-      }
     }
 
     @media screen and (max-width: 768px) {
@@ -54,6 +49,16 @@ header {
       a {
         display: block;
       }
+    }
+  }
+}
+
+.header {
+  &-link {
+    font-family: 'Sonder Slab';
+
+    &.active {
+      color: $green;
     }
   }
 }
