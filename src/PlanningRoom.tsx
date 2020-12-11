@@ -6,31 +6,27 @@ interface PlanningLiveProps {
   room: RoomData;
 }
 
-function sorter(a: ConferenceData, b: ConferenceData): number {
-  return a.begin - b.begin;
-}
-
-function reducer(groups: ConferenceData[][], conference: ConferenceData): ConferenceData[][] {
-  for (const group of groups) {
-    if (conference.begin == group[group.length - 1].end) {
+const PlanningLive = (props: PlanningLiveProps): ReactElement => {
+  const groups: ConferenceData[][] = [];
+  for (const conference of getRoomConferences(props.room).sort((a, b) => a.begin - b.begin)) {
+    const group = groups[groups.length - 1];
+    if (conference.begin === group?.[group.length - 1].end) {
       group.push(conference);
-      return groups;
+    } else {
+      groups.push([conference]);
     }
   }
 
-  groups.push([conference]);
-  return groups;
-}
-
-const PlanningLive = (props: PlanningLiveProps): ReactElement => (
-  <div className="planning-room">
-    <h2 className="planning-room-name">{props.room.name}</h2>
-    <div className="planning-room-groups">
-      {getRoomConferences(props.room).sort(sorter).reduce(reducer, []).map((group, i) => (
-        <PlanningGroup key={i} {...{ group }} />
-      ))}
+  return (
+    <div className="planning-room">
+      <h2 className="planning-room-name">{props.room.name}</h2>
+      <div className="planning-groups">
+        {groups.map((group, i) => (
+          <PlanningGroup key={i} {...{ group, next: groups[i + 1] }} />
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default PlanningLive;

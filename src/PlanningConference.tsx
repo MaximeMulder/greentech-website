@@ -6,10 +6,10 @@ interface PlanningConferenceProps {
 }
 
 const PlanningConference = (props: PlanningConferenceProps): ReactElement => (
-  <div className="planning-conference">
-    <h2 className="planning-conference-title">
-      {props.conference.title}
-    </h2>
+  <div className="planning-conference" style={{
+    height: (props.conference.end - props.conference.begin) / 40
+  }}>
+    {props.conference.title}
   </div>
 );
 
