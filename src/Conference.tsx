@@ -21,7 +21,7 @@ const Conference = (props: ConferenceProps): ReactElement => {
       </div>
       <div>
         <div className="conference-title">{props.conference.title}</div>
-        <div className="conference-description">{props.conference.description}</div>
+        <div className="conference-subtitle">{props.conference.subtitle}</div>
         {props.conference.presenters.join(' - ')}
       </div>
     </article>
