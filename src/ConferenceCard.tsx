@@ -17,12 +17,10 @@ const ConferenceCard = (props: ConferenceCardProps): ReactElement => {
           {getConferenceRoom(props.conference).name}
         </div>
         <div className="date">
-          {date.toLocaleDateString()}
-          <br />
-          {date.toLocaleTimeString()}
+          {date.toLocaleDateString()} &nbsp; {date.toLocaleTimeString()}
         </div>
       </div>
-      <div>
+      <div className="conference-summary">
         <div className="conference-title">{props.conference.title}</div>
         <div className="conference-subtitle">{props.conference.subtitle}</div>
         {props.conference.presenters.join(' - ')}

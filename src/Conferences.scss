@@ -1,27 +1,30 @@
 @import './include.scss';
 
 article {
+  display: flex;
+  flex-direction: row;
   font-size: 1.3em;
   margin: 5vh;
-  background-color: $grey;
-  height: 14vh;
+  height: 15vh;
 
   > div {
     display: inline-block;
-    color: $black;
+    color: black;
     padding: 2vh;
 
     &.left {
       float: left;
       height: 8vh;
       padding: 3vh;
-      background-color: $black;
-      color: $white;
 
       .roomName {
         font-size: 1.4em;
         text-align: center;
         padding-bottom: 10px;
+      }
+
+      .date {
+        color: $green;
       }
     }
 
@@ -30,11 +33,26 @@ article {
       font-weight: bold;
     }
   }
+
+  .conference-summary {
+    flex: 1;
+    position: relative;
+    border-left: 10px solid $green;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px $grey;
+    background-color: $white;
+  }
 }
 
 .conference-title {
   font-size: 1.2em;
   font-weight: bold;
+  text-shadow: 1px 1px 1px $grey;
+}
+
+.conference-subtitle {
+  padding-top: 8px;
+  padding-bottom: 15px;
 }
 
 .modal {
@@ -51,6 +69,7 @@ article {
     background-color: $white;
     flex-grow: 1;
     text-align: center;
+    max-width: 33%;
   }
 
   @media (max-width: 800px) {
@@ -72,23 +91,11 @@ article {
   @media (max-width: 800px) {
     text-align: center;
   }
-  
   padding: 4vh;
 }
 
 .modal-close {
   text-align: right;
-}
-
-.modal-close-button {
-  background-color: $white;
-  border: 2px solid $black;
-  border-radius: 4px;
-  cursor: pointer;
-  padding-left: 10px;
-  padding-top: 14px;
-  padding-right: 9px;
-  padding-bottom: 6px;
 }
 
 .btn {
