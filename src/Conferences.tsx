@@ -9,7 +9,7 @@ const Conferences = (): ReactElement => (
     {getConferences().map((conference) => (
       <ConferenceCard key={conference.id} {...{ conference }} />
     ))}
-  </React.Fragment>
+  </div>
 );
 
 export default Conferences;
