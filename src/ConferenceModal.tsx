@@ -16,7 +16,7 @@ const ConferenceModal = (props: ConferenceModalProps): ReactElement => (
     <div className="modal-block">
       <div className="modal-content">
         <div className="modal-close">
-          <span className="modal-close-button" onClick={() => props.setModal(null)}><img src={cross} width="20" height="20"></img></span>
+          <img src={cross} width="20" height="20" onClick={() => props.setModal(null)}></img>
         </div>
         <div id="modal-title" className="conference-title"></div>
         <br />
