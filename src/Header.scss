@@ -56,9 +56,14 @@ header {
 .header {
   &-link {
     font-family: 'Sonder Slab';
+    color:white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
 
     &.active {
       color: $green;
     }
   }
 }
+
