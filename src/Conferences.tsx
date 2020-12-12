@@ -1,15 +1,12 @@
 import React, { ReactElement } from 'react';
 import ConferenceCard from './ConferenceCard';
-import { ConferenceData } from './data';
+import { getConferences } from './data';
+
 import './Conferences.scss';
 
-interface ConferencesProps {
-  conferences: ConferenceData[];
-}
-
-const Conferences = (props: ConferencesProps): ReactElement => (
+const Conferences = (): ReactElement => (
   <React.Fragment>
-    {props.conferences.map((conference) => (
+    {getConferences().map((conference) => (
       <ConferenceCard key={conference.id} {...{ conference }} />
     ))}
   </React.Fragment>
