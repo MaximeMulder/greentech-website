@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import PlanningConference from './PlanningConference';
+import PlanningTime from './PlanningTime';
 import { ConferenceData } from './data';
 
 interface PlanningGroupProps {
@@ -14,6 +15,7 @@ const PlanningGroup = (props: PlanningGroupProps): ReactElement => (
     {props.group.map((conference) => (
       <PlanningConference key={conference.id} {...{ conference }} />
     ))}
+    <PlanningTime time={props.group[props.group.length - 1].end} limit={'end'} />
   </div>
 );
 

@@ -10,12 +10,14 @@
   }
 
   &-group {
+    position: relative;
     border-left: 10px solid $green;
     border-radius: 10px;
     box-shadow: 2px 5px 10px $grey;
   }
 
   &-conference {
+    position: relative;
     padding: 1rem;
     box-sizing: border-box;
     display: flex;
@@ -24,5 +26,18 @@
     &:not(:last-child) {
       border-bottom: 1px solid $grey;
     }
+  }
+
+  &-time {
+    position: absolute;
+    right: calc(15px + 100%);
+  }
+
+  &-start {
+    top: -10px;
+  }
+
+  &-end {
+    bottom: -10px;
   }
 }

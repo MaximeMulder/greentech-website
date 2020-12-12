@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import PlanningTime from './PlanningTime';
 import { ConferenceData } from './data';
 
 interface PlanningConferenceProps {
@@ -10,6 +11,7 @@ const PlanningConference = (props: PlanningConferenceProps): ReactElement => (
     height: (props.conference.end - props.conference.begin) / 40
   }}>
     {props.conference.title}
+    <PlanningTime time={props.conference.begin} limit={'start'} />
   </div>
 );
 
