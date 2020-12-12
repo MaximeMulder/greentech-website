@@ -1,5 +1,4 @@
-import React, { Component, ReactElement } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { ReactElement } from 'react';
 import './Presentation.scss';
 import cameraImage from './images/logo-dark.svg';
 import greenDiscover from './images/logo-dark.svg';
@@ -14,15 +13,15 @@ const Presentation = (): ReactElement => (
     <div className="container-fluid discover">
       <div className="row discover__row">
         <div className="col-6 discover__left">
-            <img src={cameraImage} className="discover__main-image"/>
+          <img src={cameraImage} className="discover__main-image" />
         </div>
         <div className="col-6 discover__right">
-            <img src={greenDiscover} className="discover__sec-image"/>
-            <a href="#">
-              <div className="bg-button">
-                  Decouvrez notre programme
-              </div>
-            </a>
+          <img src={greenDiscover} className="discover__sec-image" />
+          <a href="#">
+            <div className="bg-button">
+              Decouvrez notre programme
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -33,18 +32,8 @@ const Presentation = (): ReactElement => (
       <div className="chronometer__value">
         23 Jours 04 heures 50 min et 12 sec
       </div>
-
     </div>
   </React.Fragment>
 );
 
 export default Presentation;
-class Test {
-  render(): ReactElement {
-    return (
-      <div className="container-fluid">
-        Test2
-      </div>
-    );
-  }
-}
