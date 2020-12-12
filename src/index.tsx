@@ -6,27 +6,31 @@ import {
   Route,
 } from 'react-router-dom';
 
-import data from './data';
-import Header from './Header';
-import Presentation from './Presentation';
 import Conferences from './Conferences';
-import Planning from './Planning';
+import Header from './Header';
 import Lives from './Lives';
+import Presentation from './Presentation';
+import Planning from './Planning';
+import { ModalProvider } from './Modal';
+import data from './data';
+
 import './index.scss';
 
 const App = () => (
   <Router>
-    <Header />
-    <Switch>
-      <Route exact path="/" component={Presentation} />
-      <Route path="/conferences">
-        <Conferences conferences={data.conferences} />
-      </Route>
-      <Route path="/planning" component={Planning} />
-      <Route path="/lives">
-        <Lives rooms={data.rooms} />
-      </Route>
-    </Switch>
+    <ModalProvider>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Presentation} />
+        <Route path="/conferences">
+          <Conferences conferences={data.conferences} />
+        </Route>
+        <Route path="/planning" component={Planning} />
+        <Route path="/lives">
+          <Lives rooms={data.rooms} />
+        </Route>
+      </Switch>
+    </ModalProvider>
   </Router>
 );
 

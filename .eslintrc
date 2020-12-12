@@ -34,6 +34,7 @@
     "padded-blocks": ["error", "never"],
     "prefer-arrow-callback": "error",
     "quotes": ["error", "single"],
+    "react/display-name": "off",
     "react/jsx-closing-tag-location": "error",
     "react/jsx-no-useless-fragment": "error",
     "react/jsx-tag-spacing": "error",
