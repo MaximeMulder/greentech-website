@@ -11,8 +11,10 @@ import Header from './Header';
 import Lives from './Lives';
 import Presentation from './Presentation';
 import Planning from './Planning';
+import Footer from './Footer';
 import { ModalProvider } from './Modal';
 import data from './data';
+
 
 import './index.scss';
 
