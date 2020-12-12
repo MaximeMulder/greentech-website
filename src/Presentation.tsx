@@ -14,15 +14,15 @@ const Presentation = (): ReactElement => (
     <div className="container-fluid discover">
       <div className="row">
         <div className="col-6">
-            <img src={cameraImage} className="discover__main-image"/>
+          <img src={cameraImage} className="discover__main-image" />
         </div>
         <div className="col-6">
-            <img src={greenDiscover} className="discover__sec-image"/>
-            <a href="#">
-              <div className="bg-button">
-                  Decouvrez notre programme
-              </div>
-            </a>
+          <img src={greenDiscover} className="discover__sec-image" />
+          <a href="#">
+            <div className="bg-button">
+                Decouvrez notre programme
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -48,5 +48,3 @@ class Test {
     );
   }
 }
-
-
