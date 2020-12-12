@@ -11,11 +11,37 @@
   background-color: #2D2D2A;
   height: 500px;
 }
+.discover .bg-button {
+  width: 250px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  background-color: #34F6C1;
+  color: #2D2D2A;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.discover__row {
+  padding: 130px;
+}
 .discover__main-image {
   width: 250px;
+  margin: auto;
+  display: block;
 }
 .discover__sec-image {
   width: 150px;
+  margin: auto;
+  display: block;
+}
+.discover__right {
+  height: 100%;
+}
+.discover__left {
+  height: 100%;
 }
 
 .chronometer {
@@ -24,9 +50,16 @@
 }
 .chronometer__title {
   color: #2D2D2A;
+  font-family: "Sonder Slab";
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20vh;
 }
 .chronometer__value {
   color: #2D2D2A;
+  text-align: center;
+  font-family: "Sonder Slab";
+  font-size: 30px;
 }
 
 .overlay-gray {
