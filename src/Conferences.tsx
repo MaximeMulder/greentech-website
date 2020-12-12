@@ -5,7 +5,7 @@ import { getConferences } from './data';
 import './Conferences.scss';
 
 const Conferences = (): ReactElement => (
-  <React.Fragment>
+  <div className="conferences">
     {getConferences().map((conference) => (
       <ConferenceCard key={conference.id} {...{ conference }} />
     ))}
