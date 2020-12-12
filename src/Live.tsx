@@ -9,7 +9,6 @@ interface LiveParams {
 function Live(): ReactElement {
   const room = getRoom(Number(useParams<LiveParams>().live));
   const time_until_live = getRoomConferences(room)[0].begin - Math.floor(Date.now() / 1000);
-  console.log(time_until_live);
   const days = Math.floor(time_until_live / 86400);
   let remainder = time_until_live % 86400;
   const hours = Math.floor(remainder / 3600);
