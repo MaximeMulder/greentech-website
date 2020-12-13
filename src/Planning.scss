@@ -2,11 +2,14 @@
 
 .planning {
   display: flex;
-  justify-content: space-evenly;
+
+  &-colomn {
+    flex-grow: 1;
+  }
 
   &-room {
-    width: 250px;
-    margin: 1rem;
+    margin: 2rem;
+    margin-left: 4rem;
   }
 
   &-group {
