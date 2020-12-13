@@ -36,6 +36,7 @@
     @media (min-width: $screen-width-medium) {
       position: static;
       width: unset;
+      align-self: stretch;
       display: flex;
       flex-direction: row;
       background-color: inherit;
@@ -48,6 +49,9 @@
 
   &-link {
     padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-family: 'Sonder Slab';
     font-size: 1.2rem;
