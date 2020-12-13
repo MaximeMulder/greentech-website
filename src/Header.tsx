@@ -6,28 +6,39 @@ import logo from './images/logo-dark.svg';
 import './Header.scss';
 
 interface HeaderState {
-  burgerToggle: boolean
+  burger: boolean
 }
 
 class Header extends Component<{}, HeaderState> {
   constructor(props: {}) {
     super(props);
-    this.state = { burgerToggle: false };
-    this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      burger: false
+    };
+
+    this.burger = this.burger.bind(this);
   }
 
-  handleClick(): void {
+  componentDidMount(): void {
+    const handler = () => this.setState(() => ({
+      burger: false,
+    }));
+
+    window.matchMedia('(min-width: 720px)').addEventListener('change', handler);
+  }
+
+  burger(): void {
     this.setState((state) => ({
-      burgerToggle: !state.burgerToggle
+      burger: !state.burger
     }));
   }
 
   render(): ReactElement {
     return (
-      <header>
-        <img className="logo" src={logo} alt="Logo GreenTech" />
-        <img className={'burger' + (this.state.burgerToggle && ' active')} src={burger} alt="Burger menu" onClick={this.handleClick} />
-        <nav>
+      <header className="header">
+        <img className="header-logo" src={logo} alt="Logo GreenTech" />
+        <img className="header-burger" src={burger} alt="Burger menu" onClick={this.burger} />
+        <nav className={'header-navigation' + (this.state.burger ? ' active' : '')}>
           <NavLink className="header-link" exact to="/">PRESENTATION</NavLink>
           <NavLink className="header-link" to="/conferences">CONFERENCES</NavLink>
           <NavLink className="header-link" to="/planning">PLANNIFICATION</NavLink>
