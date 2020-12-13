@@ -1,7 +1,7 @@
 import React, { ReactElement, ReactNode } from 'react';
 
 interface ModalProviderProps {
-  children: ReactNode[]
+  children: ReactNode;
 }
 
 const ModalContext = React.createContext(null);

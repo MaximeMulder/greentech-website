@@ -251,7 +251,7 @@ const rooms = [
   {
     id: 0,
     name: 'AMPHITHEATRE',
-    live: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'
+    live: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
   },
   {
     id: 1,

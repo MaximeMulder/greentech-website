@@ -1,68 +1,64 @@
 @import './include.scss';
 
-header {
-  top: 0;
-  height: 8vh;
+.header {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: $black;
-  font-size: 2vh;
 
-  img {
-    float: left;
-    width: 8vh;
+  &-logo {
+    margin: 1rem;
+    width: 4rem;
+    height: 4rem;
   }
 
-  #burgerToggle {
-    display: none;
-    padding: 2vh;
+  &-burger {
+    display: block;
+    padding: 2rem;
     cursor: pointer;
 
-    @media screen and (max-width: 768px) {
-      display: inline-block;
-      float: right;
-
-      &.pressed ~ nav {
-        margin-right: 0;
-      }
+    @media (min-width: $screen-width-medium) {
+      display: none;
     }
   }
 
-  > nav {
-    float: right;
+  &-navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: $grey;
 
-    a {
-      display: inline-block;
-      color: $white;
-      transition: background-color .5s;
-      padding: 2.8vh 2vh;
+    @media (min-width: $screen-width-medium) {
+      position: static;
+      width: unset;
+      align-self: stretch;
+      display: flex;
+      flex-direction: row;
+      background-color: inherit;
     }
 
-    @media screen and (max-width: 768px) {
-      position: absolute;
-      background-color: $grey;
-      right: 0;
-      width: 15vh;
-      margin-top: 8vh;
-      margin-right: -15vh;
-      transition: margin-right .5s;
-
-      a {
-        display: block;
-      }
+    &.active {
+      display: flex;
     }
   }
-}
 
-.header {
   &-link {
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-family: 'Sonder Slab';
-    color:white;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    color: $white;
 
     &.active {
       color: $green;
     }
   }
 }
-

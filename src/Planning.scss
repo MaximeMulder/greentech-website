@@ -1,23 +1,16 @@
 @import './include.scss';
 
 .planning {
-  &-room {
-    width: 250px;
-    margin: 1rem;
+  display: flex;
 
-    &-name {
-      text-align: center;
-      font-family: 'Sonder Sans';
-
-      &.active {
-        color: $green;
-      }
-    }
+  &-colomn {
+    flex-basis: 0;
+    flex-grow: 1;
   }
 
-  &-colomns {
-    display: flex;
-    justify-content: space-evenly;
+  &-room {
+    margin: 2rem;
+    margin-left: 4rem;
   }
 
   &-group {

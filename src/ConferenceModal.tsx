@@ -4,7 +4,7 @@ import { withModal } from './Modal';
 
 import { ConferenceData, getConferenceRoom } from './data';
 
-import cross from './images/cross.svg';
+import close from './images/close.svg';
 
 interface ConferenceModalProps {
   conference: ConferenceData;
@@ -16,10 +16,8 @@ const ConferenceModal = (props: ConferenceModalProps): ReactElement => {
   return (
     <div className="modal">
       <div className="modal-block">
+        <img className="modal-close" src={close} onClick={() => props.setModal(null)} />
         <div className="modal-content">
-          <div className="modal-close">
-            <img src={cross} width="20" height="20" onClick={() => props.setModal(null)}></img>
-          </div>
           <div className="conference-title">{props.conference.title}</div>
           <br />
           <div className="conference-subtitle">{props.conference.subtitle}</div>
@@ -30,7 +28,7 @@ const ConferenceModal = (props: ConferenceModalProps): ReactElement => {
           <br />
           <p>{getConferenceRoom(props.conference).name} - {date.toLocaleDateString()} - {date.toLocaleTimeString()}</p>
         </div>
-        <Link className="btn" to={'/lives/' + getConferenceRoom(props.conference).id} onClick={() => props.setModal(null)}>VOIR LE LIVE</Link>
+        <Link className="modal-button" to={'/lives/' + getConferenceRoom(props.conference).id} onClick={() => props.setModal(null)}>VOIR LE LIVE</Link>
       </div>
       <div className="modal-around" onClick={() => props.setModal(null)}></div>
     </div>

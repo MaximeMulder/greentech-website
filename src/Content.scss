@@ -1,0 +1,13 @@
+@import 'include.scss';
+
+.content {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-width-medium) {
+    width: 80%;
+    margin: 3rem;
+    align-self: center;
+  }
+}
