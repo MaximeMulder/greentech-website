@@ -17,7 +17,7 @@ function Live(): ReactElement {
   const seconds = remainder % 60;
   return (
     <React.Fragment>
-      <iframe title={room.name} src={room.live} width="720" height="480"></iframe>
+      <iframe title={room.name} src={room.live} width="720" height="480" allow="fullscreen"></iframe>
     La conférence débute dans : {days ? days + ' J' : ''} {hours ? hours + ' H' : ''} {minutes} MIN {seconds} SEC
     </React.Fragment>
   );
