@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
+import Content from './Content';
 import PlanningProxy from './PlanningProxy';
 import PlanningRoom from './PlanningRoom';
 import Rooms from './Rooms';
@@ -28,23 +29,27 @@ class Planning extends React.Component<{}, PlanningState> {
   }
 
   render(): ReactElement {
-    return this.state.large ? (
-      <div className="planning">
-        {getRooms().map((room) => (
-          <div key={room.id} className="planning-colomn">
-            <h2 className="room-name">{room.name}</h2>
-            <PlanningRoom {...{ room }} />
+    return (
+      <Content>
+        {this.state.large ? (
+          <div className="planning">
+            {getRooms().map((room) => (
+              <div key={room.id} className="planning-colomn">
+                <h2 className="room-name">{room.name}</h2>
+                <PlanningRoom {...{ room }} />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    ) : (
-      <React.Fragment>
-        <Rooms to="/planning/" />
-        <Switch>
-          <Route path="/planning/:room" component={PlanningProxy} />
-          <Redirect to="/planning/0" />
-        </Switch>
-      </React.Fragment>
+        ) : (
+          <React.Fragment>
+            <Rooms to="/planning/" />
+            <Switch>
+              <Route path="/planning/:room" component={PlanningProxy} />
+              <Redirect to="/planning/0" />
+            </Switch>
+          </React.Fragment>
+        )}
+      </Content>
     );
   }
 }
