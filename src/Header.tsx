@@ -1,5 +1,5 @@
 import React, { Component, ReactElement } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import burger from './images/burger.svg';
 import logo from './images/logo-dark.svg';
@@ -36,7 +36,9 @@ class Header extends Component<{}, HeaderState> {
   render(): ReactElement {
     return (
       <header className="header">
-        <img className="header-logo" src={logo} alt="Logo GreenTech" />
+        <Link to="/">
+          <img className="header-logo" src={logo} alt="Logo GreenTech" />
+        </Link>
         <img className="header-burger" src={burger} alt="Burger menu" onClick={this.burger} />
         <nav className={'header-navigation' + (this.state.burger ? ' active' : '')}>
           <NavLink className="header-link" exact to="/">PRESENTATION</NavLink>
