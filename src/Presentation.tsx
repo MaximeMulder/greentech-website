@@ -8,6 +8,7 @@ const Presentation = (): ReactElement => (
     <div className="background-green">
       <div className="overlay-gray">
         <h1 className="main-title">GreenTech</h1>
+        <p>Webinaire sur les thématiques Ville Durable et Industrie 4.0 organisé par des étudiants du CESI Rouen.</p>
       </div>
     </div>
     <div className="container-fluid discover">

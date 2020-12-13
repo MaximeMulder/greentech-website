@@ -1,6 +1,19 @@
 @import './include.scss';
 .background-green{
     max-width: 100%;
+    p{
+        margin-bottom: 0px;
+        padding-bottom: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        color:white;
+        font-weight: bold;
+        font-size: 2vw;
+        margin:0px;
+        font-family: 'Sonder Slab';
+        width:80%;
+        margin: auto;
+    }
 }
 .background-green{
     background-image: url("./images/greentech.jpg");
@@ -46,7 +59,7 @@
     &__title{
         color:$black;
         font-family: 'Sonder Slab';
-        font-size: 6vw;
+        font-size: 4vw;
         text-align: center;
         padding-top: 20vh;
     }
@@ -65,18 +78,35 @@
 }
 
 .main-title{
-
-    color:red;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 18%;
     color:white;
     font-weight: bold;
     font-size: 10vw;
     margin:0px;
     font-family: 'Sonder Slab';
-    padding:220px 0px;
+    padding:220px 0px 100px 0px;
 }
+
+
+@media (max-width: 600px) {
+    .background-green {
+        p{
+            font-size: 3vw;
+        }
+    }
+
+    .chronometer{   
+        &__title{
+            font-size: 5vw;
+        }
+        &__value{
+            font-size: 5vw;
+        }
+    } 
+}
+
+
 
 
 
