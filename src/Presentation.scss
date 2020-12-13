@@ -4,11 +4,9 @@
 }
 .background-green{
     background-image: url("./images/greentech.jpg");
-    height: 500px;
 }
 .discover{
     background-color: $black;
-    height: 500px;
     .bg-button{
         width:250px;
         margin:auto;
@@ -23,7 +21,7 @@
         margin-top: 30px;
     }
     &__row{
-        padding:130px;
+        padding:130px 0px;
     }
     &__main-image{
         width:250px;
@@ -45,11 +43,10 @@
 }
 .chronometer{
     background-color: $green;
-    height: 500px;
     &__title{
         color:$black;
         font-family: 'Sonder Slab';
-        font-size: 40px;
+        font-size: 6vw;
         text-align: center;
         padding-top: 20vh;
     }
@@ -57,7 +54,8 @@
         color:$black;
         text-align: center;
         font-family: 'Sonder Slab';
-        font-size:30px;
+        font-size:4vw;
+        padding-bottom: 20vh;
     }
 }
 .overlay-gray{
@@ -74,7 +72,12 @@
     padding-top: 18%;
     color:white;
     font-weight: bold;
-    font-size:70px;
+    font-size: 10vw;
     margin:0px;
     font-family: 'Sonder Slab';
+    padding:220px 0px;
 }
+
+
+
+

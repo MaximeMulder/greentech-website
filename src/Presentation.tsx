@@ -12,10 +12,10 @@ const Presentation = (): ReactElement => (
     </div>
     <div className="container-fluid discover">
       <div className="row discover__row">
-        <div className="col-6 discover__left">
+        <div className="col-xl-6 col-sm-12 discover__left mobile-pad">
           <img src={cameraImage} className="discover__main-image" />
         </div>
-        <div className="col-6 discover__right">
+        <div className="col-xl-6 col-sm-12 discover__right">
           <img src={greenDiscover} className="discover__sec-image" />
           <a href="#">
             <div className="bg-button">

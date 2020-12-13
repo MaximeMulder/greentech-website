@@ -11,6 +11,7 @@ import Header from './Header';
 import Lives from './Lives';
 import Presentation from './Presentation';
 import Planning from './Planning';
+import Footer from './Footer';
 import { ModalProvider } from './Modal';
 
 import './index.scss';
@@ -25,6 +26,7 @@ const App = () => (
         <Route path="/planning" component={Planning} />
         <Route path="/lives" component={Lives} />
       </Switch>
+      <Footer />
     </ModalProvider>
   </Router>
 );
