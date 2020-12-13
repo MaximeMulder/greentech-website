@@ -30,11 +30,9 @@ class Planning extends React.Component<{}, PlanningState> {
     return this.state.large ? (
       <div className="planning-colomns">
         {getRooms().map((room) => (
-          <div key={room.id} className="planning-colomns">
-            <div key={room.id} className="planning-colomn">
-              <h2 className="planning-room-name">{room.name}</h2>
-              <PlanningRoom {...{ room }} />
-            </div>
+          <div key={room.id} className="planning-colomn">
+            <h2 className="planning-room-name">{room.name}</h2>
+            <PlanningRoom {...{ room }} />
           </div>
         ))}
       </div>
