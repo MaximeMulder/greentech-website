@@ -250,17 +250,17 @@ const conferences = [
 const rooms = [
   {
     id: 0,
-    name: 'Amphithéâtre',
+    name: 'AMPHITHEATRE',
     live: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'
   },
   {
     id: 1,
-    name: 'Salle 1',
+    name: 'SALLE 1',
     live: 'https://www.youtube.com/embed/Q16KpquGsIc'
   },
   {
     id: 2,
-    name: 'Salle 2',
+    name: 'SALLE 2',
     live: 'https://www.youtube.com/embed/Q16KpquGsIc'
   }
 ];
