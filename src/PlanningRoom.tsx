@@ -2,11 +2,11 @@ import React, { ReactElement } from 'react';
 import { RoomData, getRoomConferences, ConferenceData } from './data';
 import PlanningGroup from './PlanningGroup';
 
-interface PlanningLiveProps {
+interface PlanningRoomProps {
   room: RoomData;
 }
 
-const PlanningLive = (props: PlanningLiveProps): ReactElement => {
+const PlanningRoom = (props: PlanningRoomProps): ReactElement => {
   const groups: ConferenceData[][] = [];
   for (const conference of getRoomConferences(props.room).sort((a, b) => a.begin - b.begin)) {
     const group = groups[groups.length - 1];
@@ -19,14 +19,11 @@ const PlanningLive = (props: PlanningLiveProps): ReactElement => {
 
   return (
     <div className="planning-room">
-      <h2 className="planning-room-name">{props.room.name}</h2>
-      <div className="planning-groups">
-        {groups.map((group, i) => (
-          <PlanningGroup key={i} {...{ group, next: groups[i + 1] }} />
-        ))}
-      </div>
+      {groups.map((group, i) => (
+        <PlanningGroup key={i} {...{ group, next: groups[i + 1] }} />
+      ))}
     </div>
   );
 };
 
-export default PlanningLive;
+export default PlanningRoom;
