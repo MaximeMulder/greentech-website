@@ -1,0 +1,15 @@
+@import 'include.scss';
+
+.room {
+  width: 250px;
+  margin: 1rem;
+
+  &-name {
+    text-align: center;
+    font-family: 'Sonder Sans';
+
+    &.active {
+      color: $green;
+    }
+  }
+}

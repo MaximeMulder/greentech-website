@@ -1,7 +1,8 @@
 import React, { ReactElement } from 'react';
-import { NavLink, Redirect, Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import PlanningProxy from './PlanningProxy';
 import PlanningRoom from './PlanningRoom';
+import Rooms from './Rooms';
 import { getRooms } from './data';
 
 import './Planning.scss';
@@ -38,11 +39,7 @@ class Planning extends React.Component<{}, PlanningState> {
       </div>
     ) : (
       <React.Fragment>
-        <div className="planning-rooms">
-          {getRooms().map((room) => (
-            <NavLink key={room.id} className="planning-room-name" to={'/planning/' + room.id}>{room.name}</NavLink>
-          ))}
-        </div>
+        <Rooms to="/planning/" />
         <Switch>
           <Route path="/planning/:room" component={PlanningProxy} />
           <Redirect to="/planning/0" />
