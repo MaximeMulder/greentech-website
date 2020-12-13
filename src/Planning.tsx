@@ -29,10 +29,10 @@ class Planning extends React.Component<{}, PlanningState> {
 
   render(): ReactElement {
     return this.state.large ? (
-      <div className="planning-colomns">
+      <div className="planning">
         {getRooms().map((room) => (
           <div key={room.id} className="planning-colomn">
-            <h2 className="planning-room-name">{room.name}</h2>
+            <h2 className="room-name">{room.name}</h2>
             <PlanningRoom {...{ room }} />
           </div>
         ))}
