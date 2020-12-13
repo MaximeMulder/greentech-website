@@ -13,6 +13,7 @@
   },
   "rules": {
     "@typescript-eslint/array-type": "error",
+    "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/type-annotation-spacing": "error",
     "array-bracket-spacing": "error",
     "arrow-parens": "error",

@@ -8,8 +8,8 @@ interface HeaderState {
   burgerToggle: boolean
 }
 
-class Header extends Component<unknown, HeaderState> {
-  constructor(props: never) {
+class Header extends Component<{}, HeaderState> {
+  constructor(props: {}) {
     super(props);
     this.state = { burgerToggle: false };
     this.handleClick = this.handleClick.bind(this);
