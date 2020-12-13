@@ -35,7 +35,7 @@ class Planning extends React.Component<{}, PlanningState> {
           <div className="planning">
             {getRooms().map((room) => (
               <div key={room.id} className="planning-colomn">
-                <h2 className="room-name">{room.name}</h2>
+                <div className="room">{room.name}</div>
                 <PlanningRoom {...{ room }} />
               </div>
             ))}

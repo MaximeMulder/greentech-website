@@ -11,7 +11,7 @@ interface RoomsProps {
 const Rooms = (props: RoomsProps): ReactElement => (
   <div className="rooms">
     {getRooms().map((room) => (
-      <NavLink key={room.id} className="room-name" to={props.to + room.id}>{room.name}</NavLink>
+      <NavLink key={room.id} className="room" to={props.to + room.id}>{room.name}</NavLink>
     ))}
   </div>
 );
