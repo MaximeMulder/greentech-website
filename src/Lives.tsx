@@ -13,7 +13,7 @@ const Lives = (): ReactElement => (
     ))}
     <Switch>
       <Route path="/lives/:live" component={Live} />
-      <Redirect from="/lives/" to="/lives/0" />
+      <Redirect to="/lives/0" />
     </Switch>
   </React.Fragment>
 );
