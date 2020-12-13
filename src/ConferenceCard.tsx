@@ -11,7 +11,7 @@ interface ConferenceCardProps {
 const ConferenceCard = (props: ConferenceCardProps): ReactElement => {
   const date: Date = new Date(props.conference.begin * 1000);
   return (
-    <article onClick={() => props.setModal(<ConferenceModal conference={props.conference} />)}>
+    <article className="conference-card" onClick={() => props.setModal(<ConferenceModal conference={props.conference} />)}>
       <div className="left">
         <div className="roomName">
           {getConferenceRoom(props.conference).name}

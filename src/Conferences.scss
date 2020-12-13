@@ -6,6 +6,10 @@
   flex-wrap: wrap;
 }
 
+.conference-card {
+  cursor: pointer;
+}
+
 article {
   flex: 1 600px;
   display: flex;
@@ -73,15 +77,6 @@ article {
   display: flex;
   flex-direction: row-reverse;
 
-  .modal-block {
-    background-color: $white;
-    flex-grow: 1;
-    text-align: center;
-    @media (min-width: 801px) {
-      max-width: 33%;
-    }
-  }
-
   @media (max-width: 800px) {
     .modal-around {
       display: none;
@@ -96,32 +91,41 @@ article {
   }
 }
 
+.modal {
+  &-block {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: $white;
+
+    @media (min-width: $screen-width-medium) {
+      width: 40%;
+    }
+  }
+
+  &-close {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 1rem;
+    align-self: end;
+    cursor: pointer;
+  }
+
+  &-button {
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px $grey;
+    align-self: center;
+    background-color: $green;
+    font-weight: bold;
+    color: $white;
+  }
+}
+
 .modal-content {
   text-align: left;
   @media (max-width: 800px) {
     text-align: center;
   }
-  padding: 4vh;
-}
-
-.modal-close {
-  text-align: right;
-}
-
-.btn {
-  display: inline-block;
-  background-color: $green;
-  text-align: center;
-  color: $white;
-  font-weight: bold;
-  text-decoration: none;
-
-  border: 2px solid $green;
-  border-radius: 10px;
-  box-shadow: 2px 2px 3px $black;
-
-  margin: 1%;
-  padding: 1vh;
-  padding-left: 3vh;
-  padding-right: 3vh;
+  padding: 2rem;
 }
