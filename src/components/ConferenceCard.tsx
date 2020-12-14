@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { withModal } from './Modal';
 import ConferenceModal from './ConferenceModal';
-import { ConferenceData, getConferenceRoom } from './data';
+import { ConferenceData, getConferenceRoom } from '../data';
 
 interface ConferenceCardProps {
   conference: ConferenceData;

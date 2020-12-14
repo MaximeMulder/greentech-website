@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { RoomData, getRoomConferences, ConferenceData } from './data';
+import { RoomData, getRoomConferences, ConferenceData } from '../data';
 import PlanningGroup from './PlanningGroup';
 
 interface PlanningRoomProps {

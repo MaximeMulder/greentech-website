@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import PlanningTime from './PlanningTime';
-import { ConferenceData } from './data';
+import { ConferenceData } from '../data';
 
 interface PlanningConferenceProps {
     conference: ConferenceData;

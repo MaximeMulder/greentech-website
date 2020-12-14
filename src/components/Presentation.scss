@@ -1,0 +1,89 @@
+@import './../include.scss';
+
+.presentation {
+  &-background {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba($grey, 0.6), rgba($grey, 0.6)), center no-repeat url('../images/greentech.jpg');
+    text-align: center;
+    text-shadow: 5px 5px 10px $black;
+  }
+
+  &-title {
+    font-family: 'Sonder Slab';
+    font-size: 4rem;
+    color: $white;
+
+    @media (min-width: $screen-width-medium) {
+      font-size: 6rem;
+    }
+  }
+
+  &-paragraph {
+    font-family: 'Sonder Sans';
+    font-size: 1.4rem;
+    color: $white;
+
+    @media (min-width: $screen-width-medium) {
+      font-size: 2rem;
+    }
+  }
+
+  &-program {
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $black;
+
+    @media (min-width: $screen-width-medium) {
+      padding: 6rem 2rem;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &-logo {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  &-button {
+    display: block;
+    width: 20rem;
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: $green;
+    text-align: center;
+    font-family: 'Sonder Sans';
+    font-size: 1.6rem;
+    color: $black;
+  }
+
+  &-timer {
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $green;
+    text-align: center;
+    font-family: 'Sonder Slab';
+    font-size: 1.6rem;
+    color:$black;
+
+    @media (min-width: $screen-width-medium) {
+      padding: 8rem 4rem;
+      font-size: 2.6rem;
+    }
+  }
+
+  &-catchphrase {
+    margin-bottom: 1rem;
+
+    @media (min-width: $screen-width-medium) {
+      margin-bottom: 2rem;
+    }
+  }
+}

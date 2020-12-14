@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import PlanningConference from './PlanningConference';
 import PlanningTime from './PlanningTime';
-import { ConferenceData } from './data';
+import { ConferenceData } from '../data';
 
 interface PlanningGroupProps {
   group: ConferenceData[];

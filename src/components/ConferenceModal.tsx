@@ -2,9 +2,9 @@ import React, { ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 import { withModal } from './Modal';
 
-import { ConferenceData, getConferenceRoom } from './data';
+import { ConferenceData, getConferenceRoom } from '../data';
 
-import close from './images/close.svg';
+import close from '../images/close.svg';
 
 interface ConferenceModalProps {
   conference: ConferenceData;

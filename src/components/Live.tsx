@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { useParams } from 'react-router';
 import Timer from './Timer';
-import { getRoomConferences, getRoom } from './data';
+import { getRoomConferences, getRoom } from '../data';
 
 import './Live.scss';
 

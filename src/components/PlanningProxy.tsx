@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { useParams } from 'react-router';
 import PlanningRoom from './PlanningRoom';
-import { getRoom } from './data';
+import { getRoom } from '../data';
 
 interface PlanningProxyParams {
   room: string,

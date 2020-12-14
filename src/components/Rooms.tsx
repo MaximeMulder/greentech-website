@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { NavLink } from 'react-router-dom';
-import { getRooms } from './data';
+import { getRooms } from '../data';
 
 import './Rooms.scss';
 
