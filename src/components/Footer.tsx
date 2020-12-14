@@ -14,13 +14,13 @@ const Footer = (): ReactElement => (
     <div className="footer-part">
       <div className="footer-title">Contact</div>
       <div className="footer-list">
-        <a href="https://twitter.com/">
+        <a href="https://twitter.com/greentechrouen">
           <img className="footer-logo" src={twitter} />
         </a>
-        <a href="https://linkedin.com/">
+        <a href="https://www.linkedin.com/company/greentech-rouen/">
           <img className="footer-logo" src={linkedin} />
         </a>
-        <a href="mailto:none">
+        <a href="mailto:greentech.rouen@gmail.com">
           <img className="footer-logo" src={mail} />
         </a>
       </div>
