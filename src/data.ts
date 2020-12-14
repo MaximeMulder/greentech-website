@@ -225,7 +225,7 @@ const conferences = [
     description: 'Les Smart Buildings seront la base pour une transition vers les Smarts Cities. Il est donc important de comprendre les enjeux, autant écologique qu\'économique, des bâtiments des villes de demain, mais aussi les risques qui peuvent être engendrés par un développement de ces smart buildings.',
     image: 'image url',
     presenters: [
-      'Célia Henry',
+      'Celia Henry',
     ],
     room: 1,
     begin: 1609851000,
