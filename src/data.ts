@@ -138,7 +138,7 @@ const conferences = [
   {
     id: 8,
     title: 'GreenIT au sein de la DSI',
-    subtitle: 'Présentation du concept et de ces bonnes pratiques.',
+    subtitle: 'Présentation du concept et de ses bonnes pratiques.',
     description: 'Introduction au concept de l\'informatique durable. Présentation de bonnes pratiques en matière d\'informatique durable (matériel, hébergement, développement).',
     image: 'image url',
     presenters: [
