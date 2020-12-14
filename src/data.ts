@@ -37,7 +37,7 @@ const conferences = [
     id: 1,
     title: 'Cloud computing',
     subtitle: 'L\'utilisation du Cloud Computing dans la gestion de la ville.',
-    description: 'L\'évolution continuelle des technologies numériques nous montre au quotidien que la ville de demain sera en grande partie, si ce n’est entièrement, connectée. De nouveaux services numériques voient le jour, tandis que d’autres bénéficies des avancées technologiques permettant d’améliorer la qualité des services actuels. Les différentes applications du cloud computing illustrent parfaitement cet exemple. En effet, certains services du cloud d’aujourd’hui évoluent tandis que d’autres essayent de faire leurs preuves comme c’est le cas pour le cloud gaming. Notre objectif de recherche sera d’étudier et tenter de prévoir l’évolution de ces technologies. Nos travaux porteront donc sur le développement des technologies du cloud, leur adoption ainsi que les nouvelles branches du cloud qui selon nous pourraient émerger ces prochaines années dans le cas d’une ville durable et/ou de l’industrie 4.0.',
+    description: 'L\'évolution continuelle des technologies numériques nous montre au quotidien que la ville de demain sera en grande partie, si ce n\'est entièrement, connectée. De nouveaux services numériques voient le jour, tandis que d\'autres bénéficies des avancées technologiques permettant d\'améliorer la qualité des services actuels. Les différentes applications du cloud computing illustrent parfaitement cet exemple. En effet, certains services du cloud d\'aujourd\'hui évoluent tandis que d\'autres essayent de faire leurs preuves comme c\'est le cas pour le cloud gaming. Notre objectif de recherche sera d\'étudier et tenter de prévoir l\'évolution de ces technologies. Nos travaux porteront donc sur le développement des technologies du cloud, leur adoption ainsi que les nouvelles branches du cloud qui selon nous pourraient émerger ces prochaines années dans le cas d\'une ville durable et/ou de l\'industrie 4.0.',
     image: 'image url',
     presenters: [
       'Antoine Savalle',
@@ -67,7 +67,7 @@ const conferences = [
     id: 3,
     title: 'Fluidifier le trafic',
     subtitle: 'L\'utilisation des nouvelles technologies pour optimiser le trafic.',
-    description: 'La gestion des embouteillages est l\'un des enjeux principaux au sein des smart cities car il a un impact sur la réduction de la pollution atmosphérique et sonore. L\'IA et le Machine Learning peuvent être utilisé pour fluidifier le trafic, l\'IA accumule de nombreuses données sur le trafic puis les analysent afin de prendre une décision afin d’améliorer le trafic. Par exemple, l\'IA peut détecter des embouteillages sur une route et peut décider de dévier le trafic grâce aux feux de circulations.',
+    description: 'La gestion des embouteillages est l\'un des enjeux principaux au sein des smart cities car il a un impact sur la réduction de la pollution atmosphérique et sonore. L\'IA et le Machine Learning peuvent être utilisé pour fluidifier le trafic, l\'IA accumule de nombreuses données sur le trafic puis les analysent afin de prendre une décision afin d\'améliorer le trafic. Par exemple, l\'IA peut détecter des embouteillages sur une route et peut décider de dévier le trafic grâce aux feux de circulations.',
     image: 'image url',
     presenters: [
       'Kévin Huard',
@@ -81,7 +81,7 @@ const conferences = [
     id: 4,
     title: 'Télécommunications',
     subtitle: 'Permettre un accès continu à internet dans toute la métropole.',
-    description: 'Dans cette conférence nous aborderons le sujet de l’accès à internet dans nos villes de demain. Premièrement, nous présenterons des problèmes soulevés par le manque d’accès à internet en ville, puis des exemples de cas d’utilisation possible grâce à la mise en place d’un accès à internet dans la métropole. Ensuite, nous parlerons des technologies innovantes en rapport notre problématiques. Pour conclure nous présenterons une étude de faisabilité de ce projet a l’échelle d’une métropole.',
+    description: 'Dans cette conférence nous aborderons le sujet de l\'accès à internet dans nos villes de demain. Premièrement, nous présenterons des problèmes soulevés par le manque d\'accès à internet en ville, puis des exemples de cas d\'utilisation possible grâce à la mise en place d\'un accès à internet dans la métropole. Ensuite, nous parlerons des technologies innovantes en rapport notre problématiques. Pour conclure nous présenterons une étude de faisabilité de ce projet a l\'échelle d\'une métropole.',
     image: 'image url',
     presenters: [
       'Victor Personnettaz',
@@ -123,8 +123,8 @@ const conferences = [
   {
     id: 7,
     title: 'Fermes urbaines',
-    subtitle: 'subtitle',
-    description: 'Notre conférence présentera le sujet des fermes urbaines, traitera de leur état ainsi que leur place dans la smart city et industrie 4.0. Nous commencerons sur un état de l’art suivi de pistes d’améliorations et les innovations.',
+    subtitle: '',
+    description: 'Notre conférence présentera le sujet des fermes urbaines, traitera de leur état ainsi que leur place dans la smart city et industrie 4.0. Nous commencerons sur un état de l\'art suivi de pistes d\'améliorations et les innovations.',
     image: 'image url',
     presenters: [
       'Baptiste Pimont',
@@ -165,7 +165,7 @@ const conferences = [
   {
     id: 10,
     title: 'Gestion des flux',
-    subtitle: 'subtitle',
+    subtitle: '',
     description: 'Voitures, piétons, transports en commun, services publics, électricité, eau : De nombreux flux parcourent nos villes en tout temps. Quelles sont les relations que la Smart City entretient avec ces flux ? Et surtout, par quels moyens peut-elle les fluidifier, aujourd\'hui et dans les années à l\'avenir ? Nous nous efforcerons de répondre à ces questions sur l\'heure qui nous a été allouée.',
     image: 'image url',
     presenters: [
@@ -192,9 +192,9 @@ const conferences = [
   },
   {
     id: 12,
-    title: 'Reconnaissance des iris',
-    subtitle: 'subtitle',
-    description: 'description',
+    title: 'Portefeuille numérique',
+    subtitle: '',
+    description: 'De nos jours, nos papiers personnels sont très importants dans notre vie quotidienne et surtout avec le confinement, la situation va être de plus en plus compliquée puisque à chaque sorti, on doit être muni d\'une attestation de déplacement et un justificatif d\'identité. Note solution est d\'informatiser tous les cartes personnelles comme la carte d\'identité et la carte bancaire et réaliser un profile numérique qui contiens tous les coordonnés personnelles pour éliminer les carte tangible, alors on va réaliser un système de contrôle d\'accès biométrique qui se base sur la reconnaissance de l\'iris liées avec un système de reconnaissance faciale en 3D qui est liée directement avec le cloud. On va appliquer cette solution pour faire des paiement sans besoin d\'apporter une carte bancaire et même sans besoin de retenir des mot de passe, notre solution est un moyen pour facilité le paiement n\'importe ou (autoroute, caisse en magasin, pharmacie etc….)',
     image: 'image url',
     presenters: [
       'Alaeddine Abdelkafi',
