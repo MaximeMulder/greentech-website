@@ -1,0 +1,10 @@
+.live {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-video {
+    width: 720px;
+    height: 420px;
+  }
+}

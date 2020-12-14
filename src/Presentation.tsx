@@ -1,7 +1,10 @@
 import React, { ReactElement } from 'react';
-import './Presentation.scss';
+import Timer from './Timer';
+import { getConferences } from './data';
+
 import cameraImage from './images/logo-dark.svg';
 import greenDiscover from './images/logo-dark.svg';
+import './Presentation.scss';
 
 const Presentation = (): ReactElement => (
   <React.Fragment>
@@ -31,7 +34,7 @@ const Presentation = (): ReactElement => (
         Debut des conferences dans :
       </div>
       <div className="chronometer__value">
-        23 Jours 04 heures 50 min et 12 sec
+        <Timer time={getConferences().reduce((a, b) => a.begin < b.begin ? a : b).begin} />
       </div>
     </div>
   </React.Fragment>

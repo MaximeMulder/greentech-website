@@ -1,6 +1,9 @@
 import React, { ReactElement } from 'react';
 import { useParams } from 'react-router';
+import Timer from './Timer';
 import { getRoomConferences, getRoom } from './data';
+
+import './Live.scss';
 
 interface LiveParams {
   live: string,
@@ -8,18 +11,12 @@ interface LiveParams {
 
 function Live(): ReactElement {
   const room = getRoom(Number(useParams<LiveParams>().live));
-  const time_until_live = getRoomConferences(room)[0].begin - Math.floor(Date.now() / 1000);
-  const days = Math.floor(time_until_live / 86400);
-  let remainder = time_until_live % 86400;
-  const hours = Math.floor(remainder / 3600);
-  remainder = remainder % 3600;
-  const minutes = Math.floor(remainder / 60);
-  const seconds = remainder % 60;
   return (
-    <React.Fragment>
-      <iframe title={room.name} src={room.live} width="720" height="480" />
-      La conférence débute dans : {days ? days + ' J' : ''} {hours ? hours + ' H' : ''} {minutes} MIN {seconds} SEC
-    </React.Fragment>
+    <div className="live">
+      <iframe className="live-video" src={room.live} title={room.name} />
+      La conférence débute dans :
+      <Timer time={getRoomConferences(room).reduce((a, b) => a.begin < b.begin ? a : b).begin} />
+    </div>
   );
 }
 
