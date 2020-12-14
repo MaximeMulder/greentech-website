@@ -1,113 +1,89 @@
 @import './include.scss';
-.background-green{
-    max-width: 100%;
-    p{
-        margin-bottom: 0px;
-        padding-bottom: 50px;
-        text-transform: uppercase;
-        text-align: center;
-        color:white;
-        font-weight: bold;
-        font-size: 2vw;
-        margin:0px;
-        font-family: 'Sonder Slab';
-        width:80%;
-        margin: auto;
-    }
-}
-.background-green{
-    background-image: url("./images/greentech.jpg");
-}
-.discover{
-    background-color: $black;
-    .bg-button{
-        width:250px;
-        margin:auto;
-        display: block;
-        text-align: center;
-        background-color: $green;
-        color:$black;
-        text-transform: uppercase;
-        padding:15px;
-        border-radius: 15px;
-        font-weight: bold;
-        margin-top: 30px;
-    }
-    &__row{
-        padding:130px 0px;
-    }
-    &__main-image{
-        width:250px;
-        margin:auto;
-        display: block;
-    }
-    &__sec-image{
-        width:150px;
-        margin:auto;
-        display: block;
-    }
-    &__right{
-        height: 100%;
-     
-    }
-    &__left{
-       height: 100%; 
-    }
-}
-.chronometer{
-    background-color: $green;
-    &__title{
-        color:$black;
-        font-family: 'Sonder Slab';
-        font-size: 4vw;
-        text-align: center;
-        padding-top: 20vh;
-    }
-    &__value{
-        color:$black;
-        text-align: center;
-        font-family: 'Sonder Slab';
-        font-size:4vw;
-        padding-bottom: 20vh;
-    }
-}
-.overlay-gray{
-    background-color: rgba(196,196,196,0.91);
-    width: 100%;
-    height: 100%;
-}
 
-.main-title{
-    text-transform: uppercase;
+.presentation {
+  &-background {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba($grey, 0.6), rgba($grey, 0.6)), center no-repeat url('./images/greentech.jpg');
     text-align: center;
-    color:white;
-    font-weight: bold;
-    font-size: 10vw;
-    margin:0px;
+    text-shadow: 5px 5px 10px $black;
+  }
+
+  &-title {
     font-family: 'Sonder Slab';
-    padding:220px 0px 100px 0px;
-}
+    font-size: 4rem;
+    color: $white;
 
-
-@media (max-width: 600px) {
-    .background-green {
-        p{
-            font-size: 3vw;
-        }
+    @media (min-width: $screen-width-medium) {
+      font-size: 6rem;
     }
+  }
 
-    .chronometer{   
-        &__title{
-            font-size: 5vw;
-        }
-        &__value{
-            font-size: 5vw;
-        }
-    } 
+  &-paragraph {
+    font-family: 'Sonder Sans';
+    font-size: 1.4rem;
+    color: $white;
+
+    @media (min-width: $screen-width-medium) {
+      font-size: 2rem;
+    }
+  }
+
+  &-program {
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $black;
+
+    @media (min-width: $screen-width-medium) {
+      padding: 6rem 2rem;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &-logo {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  &-button {
+    display: block;
+    width: 20rem;
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: $green;
+    text-align: center;
+    font-family: 'Sonder Sans';
+    font-size: 1.6rem;
+    color: $black;
+  }
+
+  &-timer {
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $green;
+    text-align: center;
+    font-family: 'Sonder Slab';
+    font-size: 1.6rem;
+    color:$black;
+
+    @media (min-width: $screen-width-medium) {
+      padding: 8rem 4rem;
+      font-size: 2.6rem;
+    }
+  }
+
+  &-catchphrase {
+    margin-bottom: 1rem;
+
+    @media (min-width: $screen-width-medium) {
+      margin-bottom: 2rem;
+    }
+  }
 }
-
-
-
-
-
-
