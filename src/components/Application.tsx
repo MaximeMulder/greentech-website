@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Conferences from './Conferences';
 import Footer from './Footer';
@@ -12,7 +12,7 @@ import { ModalProvider } from './Modal';
 import './Application.scss';
 
 const Application = (): ReactElement => (
-  <HashRouter>
+  <BrowserRouter>
     <ModalProvider>
       <div className="application">
         <Header />
@@ -25,7 +25,7 @@ const Application = (): ReactElement => (
         <Footer />
       </div>
     </ModalProvider>
-  </HashRouter>
+  </BrowserRouter>
 );
 
 export default Application;
