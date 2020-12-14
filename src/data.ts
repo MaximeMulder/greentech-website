@@ -251,17 +251,17 @@ const rooms = [
   {
     id: 0,
     name: 'AMPHITHEATRE',
-    live: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+    live: 'https://www.youtube.com/embed/0000000000'
   },
   {
     id: 1,
     name: 'SALLE 1',
-    live: 'https://www.youtube.com/embed/Q16KpquGsIc'
+    live: 'https://www.youtube.com/embed/0000000000'
   },
   {
     id: 2,
     name: 'SALLE 2',
-    live: 'https://www.youtube.com/embed/Q16KpquGsIc'
+    live: 'https://www.youtube.com/embed/0000000000'
   }
 ];
 
