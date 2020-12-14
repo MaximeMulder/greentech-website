@@ -14,7 +14,7 @@ import './Application.scss';
 const Application = (): ReactElement => (
   <HashRouter>
     <ModalProvider>
-      <div className="website">
+      <div className="application">
         <Header />
         <Switch>
           <Route exact path="/" component={Presentation} />
