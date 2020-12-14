@@ -16,7 +16,7 @@ class Planning extends React.Component<{}, PlanningState> {
   constructor(props: {}) {
     super(props);
     this.state = {
-      large: window.matchMedia('(min-width: 720px)').matches
+      large: window.matchMedia('(min-width: 860px)').matches
     };
   }
 
@@ -25,7 +25,7 @@ class Planning extends React.Component<{}, PlanningState> {
       large: event.matches
     });
 
-    window.matchMedia('(min-width: 720px)').addEventListener('change', handler);
+    window.matchMedia('(min-width: 860px)').addEventListener('change', handler);
   }
 
   render(): ReactElement {

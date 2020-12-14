@@ -24,7 +24,7 @@ class Header extends Component<{}, HeaderState> {
       burger: false,
     }));
 
-    window.matchMedia('(min-width: 720px)').addEventListener('change', handler);
+    window.matchMedia('(min-width: 860px)').addEventListener('change', handler);
   }
 
   burger(): void {
