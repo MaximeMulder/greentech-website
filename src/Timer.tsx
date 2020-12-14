@@ -32,7 +32,7 @@ class Timer extends React.Component<TimerProps, TimerState> {
     const date = new Date(this.state.time);
     return (
       <div className="timer">
-        {Math.ceil(date.getTime() / (24 * 60 * 60 * 1000))} jours {date.getUTCHours()} heures {date.getUTCMinutes()} minutes {date.getUTCSeconds()} secondes
+        {Math.ceil(date.getTime() / (24 * 60 * 60 * 1000))} JOURS {date.getUTCHours()} HEURES {date.getUTCMinutes()} MINUTES {date.getUTCSeconds()} SECONDES
       </div>
     );
   }
