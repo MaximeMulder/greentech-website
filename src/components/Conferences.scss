@@ -18,16 +18,17 @@
   }
 
   &-location {
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
+    text-align: center;
 
     @media (min-width: $screen-width-medium) {
+      padding: 2rem;
       width: 10rem;
       flex-direction: column;
       justify-content: start;
       align-items: center;
-      text-align: center;
     }
   }
 
