@@ -1,7 +1,8 @@
 import React, { ReactElement } from 'react';
-import { withModal } from './Modal';
 import ConferenceModal from './ConferenceModal';
+import { withModal } from './Modal';
 import { ConferenceData, getConferenceRoom } from '../data';
+import { getDate, getTime } from '../date';
 
 interface ConferenceCardProps {
   conference: ConferenceData;
@@ -17,7 +18,7 @@ const ConferenceCard = (props: ConferenceCardProps): ReactElement => {
           {getConferenceRoom(props.conference).name}
         </div>
         <div className="conference-date">
-          {date.toLocaleDateString()} {date.toLocaleTimeString()}
+          {getDate(date)} {getTime(date)}
         </div>
       </div>
       <div className="conference-information">

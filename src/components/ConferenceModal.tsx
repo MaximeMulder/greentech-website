@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 import { withModal } from './Modal';
-
 import { ConferenceData, getConferenceRoom } from '../data';
+import { getDate, getTime } from '../date';
 
 import close from '../images/close.svg';
 
@@ -26,7 +26,7 @@ const ConferenceModal = (props: ConferenceModalProps): ReactElement => {
           <br />
           <div className="conference-description">{props.conference.description}</div>
           <br />
-          <p>{getConferenceRoom(props.conference).name} - {date.toLocaleDateString()} - {date.toLocaleTimeString()}</p>
+          <p>{getConferenceRoom(props.conference).name} - {getDate(date)} - {getTime(date)}</p>
         </div>
         <Link className="modal-button" to={'/lives/' + getConferenceRoom(props.conference).id} onClick={() => props.setModal(null)}>VOIR LE LIVE</Link>
       </div>
