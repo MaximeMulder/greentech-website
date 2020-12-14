@@ -30,7 +30,7 @@ const ConferenceModal = (props: ConferenceModalProps): ReactElement => {
         </div>
         <Link className="modal-button" to={'/lives/' + getConferenceRoom(props.conference).id} onClick={() => props.setModal(null)}>VOIR LE LIVE</Link>
       </div>
-      <div className="modal-around" onClick={() => props.setModal(null)}></div>
+      <div className="modal-overlay" onClick={() => props.setModal(null)}></div>
     </div>
   );
 };

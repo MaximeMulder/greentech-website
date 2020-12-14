@@ -1,70 +1,61 @@
 @import './include.scss';
 
 .conferences {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 100%;
+
+  @media (min-width: $screen-width-medium) {
+    grid-template-columns: repeat(2, 50%);
+  }
 }
 
-.conference-card {
+.conference {
+  margin: 1rem;
   cursor: pointer;
-}
 
-article {
-  flex: 1 600px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  font-size: 1.3em;
-  margin: 3vh;
+  @media (min-width: $screen-width-medium) {
+    display: flex;
+  }
 
-  > div {
-    display: inline-block;
-    color: black;
-    padding: 2vh;
+  &-location {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
 
-    &.left {
-      float: left;
-      height: 8vh;
-      padding: 3vh;
-
-      .roomName {
-        font-size: 1.4em;
-        text-align: center;
-        padding-bottom: 10px;
-      }
-
-      .date {
-        color: $green;
-      }
-    }
-
-    .name {
-      font-size: 1.5em;
-      font-weight: bold;
+    @media (min-width: $screen-width-medium) {
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
     }
   }
 
-  .conference-summary {
-    flex: 1 35px;
-    position: relative;
-    border-left: 10px solid $green;
-    border-radius: 10px;
-    box-shadow: 2px 5px 10px $grey;
-    background-color: $white;
+  &-room {
+    margin: 0 0.5rem;
+    font-family: 'Sonder Sans';
+    font-size: 1.2rem;
   }
-}
 
-.conference-title {
-  font-size: 1.2em;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px $grey;
-}
+  &-date {
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+  }
 
-.conference-subtitle {
-  padding-top: 8px;
-  padding-bottom: 15px;
+  &-information {
+    @include card;
+
+    padding: 1rem;
+    flex: 1 0;
+  }
+
+  &-title {
+    margin-bottom: 0.8rem;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  &-subtitle {
+    margin-bottom: 0.6rem;
+  }
 }
 
 .modal {
@@ -77,21 +68,17 @@ article {
   display: flex;
   flex-direction: row-reverse;
 
-  @media (max-width: 800px) {
-    .modal-around {
-      display: none;
-    }
-  }
-  @media (min-width: 801px) {
-    .modal-around {
+  &-overlay {
+    display: none;
+
+    @media (min-width: $screen-width-medium) {
+      display: block;
+      flex-grow: 1;
       background-color: black;
       opacity: 0.5;
-      flex-grow: 5;
     }
   }
-}
 
-.modal {
   &-block {
     display: flex;
     padding: 1rem;
@@ -120,12 +107,13 @@ article {
     font-weight: bold;
     color: $white;
   }
-}
 
-.modal-content {
-  text-align: left;
-  @media (max-width: 800px) {
+  &-content {
+    padding: 2rem;
     text-align: center;
+
+    @media (min-width: $screen-width-medium) {
+      text-align: center;
+    }
   }
-  padding: 2rem;
 }

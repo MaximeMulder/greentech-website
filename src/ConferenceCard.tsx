@@ -11,16 +11,16 @@ interface ConferenceCardProps {
 const ConferenceCard = (props: ConferenceCardProps): ReactElement => {
   const date: Date = new Date(props.conference.begin * 1000);
   return (
-    <article className="conference-card" onClick={() => props.setModal(<ConferenceModal conference={props.conference} />)}>
-      <div className="left">
-        <div className="roomName">
+    <article className="conference" onClick={() => props.setModal(<ConferenceModal conference={props.conference} />)}>
+      <div className="conference-location">
+        <div className="conference-room">
           {getConferenceRoom(props.conference).name}
         </div>
-        <div className="date">
-          {date.toLocaleDateString()} &nbsp; {date.toLocaleTimeString()}
+        <div className="conference-date">
+          {date.toLocaleDateString()} {date.toLocaleTimeString()}
         </div>
       </div>
-      <div className="conference-summary">
+      <div className="conference-information">
         <div className="conference-title">{props.conference.title}</div>
         <div className="conference-subtitle">{props.conference.subtitle}</div>
         {props.conference.presenters.join(' - ')}

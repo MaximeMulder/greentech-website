@@ -14,10 +14,9 @@
   }
 
   &-group {
+    @include card;
+
     position: relative;
-    border-left: 10px solid $green;
-    border-radius: 10px;
-    box-shadow: 2px 5px 10px $grey;
   }
 
   &-conference {
