@@ -14,6 +14,10 @@ const config: Configuration = {
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(jpg|png|svg|woff|woff2|eot|ttf|otf)$/,
+        loader: 'file-loader'
       }
     ],
   },
@@ -21,12 +25,13 @@ const config: Configuration = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    path: path.resolve( __dirname, 'dist' ),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
+      favicon: './src/images/logo-light.svg',
     }),
   ]
 };

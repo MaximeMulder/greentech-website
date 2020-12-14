@@ -1,0 +1,23 @@
+@import '../include.scss';
+
+.rooms {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.room {
+  margin: 1rem;
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+  font-family: 'Sonder Sans';
+  font-size: 1.2rem;
+
+  @media (min-width: $screen-width-medium) {
+    font-size: 1.5rem;
+  }
+
+  &.active {
+    color: $green;
+  }
+}

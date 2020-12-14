@@ -1,0 +1,24 @@
+.live {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-video {
+    width: 720px;
+    height: 420px;
+  }
+
+  &-timer {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Sonder Sans';
+    font-size: 1.6rem;
+  }
+
+  &-catchphrase {
+    margin: 1rem;
+  }
+}

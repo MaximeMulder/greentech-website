@@ -1,0 +1,46 @@
+@import './../include.scss';
+
+.planning {
+  display: flex;
+
+  &-colomn {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  &-room {
+    margin: 2rem;
+    margin-left: 4rem;
+  }
+
+  &-group {
+    @include card;
+
+    position: relative;
+  }
+
+  &-conference {
+    position: relative;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $grey;
+    }
+  }
+
+  &-time {
+    position: absolute;
+    right: calc(15px + 100%);
+  }
+
+  &-start {
+    top: -10px;
+  }
+
+  &-end {
+    bottom: -10px;
+  }
+}

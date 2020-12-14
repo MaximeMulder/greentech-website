@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Application from './components/Application';
 
-const App = () => (
-  <h1>GreenTech Rouen 2020</h1>
-);
+import './index.scss';
 
 ReactDOM.render(
-  <App />,
+  <Application />,
   document.getElementById('root')
 );

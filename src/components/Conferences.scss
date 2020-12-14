@@ -1,0 +1,123 @@
+@import './../include.scss';
+
+.conferences {
+  display: grid;
+  grid-template-columns: 100%;
+
+  @media (min-width: $screen-width-medium) {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+.conference {
+  margin: 1rem;
+  cursor: pointer;
+
+  @media (min-width: $screen-width-medium) {
+    display: flex;
+  }
+
+  &-location {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    @media (min-width: $screen-width-medium) {
+      padding: 2rem;
+      width: 10rem;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+
+  &-room {
+    margin: 0 0.5rem;
+    font-family: 'Sonder Sans';
+    font-size: 1.2rem;
+  }
+
+  &-date {
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  &-information {
+    @include card;
+
+    padding: 1rem;
+    flex: 1 0;
+  }
+
+  &-title {
+    margin-bottom: 0.8rem;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  &-subtitle {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: row-reverse;
+
+  &-overlay {
+    display: none;
+
+    @media (min-width: $screen-width-medium) {
+      display: block;
+      flex-grow: 1;
+      background-color: black;
+      opacity: 0.5;
+    }
+  }
+
+  &-block {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: $white;
+
+    @media (min-width: $screen-width-medium) {
+      width: 40%;
+    }
+  }
+
+  &-close {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 1rem;
+    align-self: end;
+    cursor: pointer;
+  }
+
+  &-button {
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px $grey;
+    align-self: center;
+    background-color: $green;
+    font-weight: bold;
+    color: $white;
+  }
+
+  &-content {
+    padding: 2rem;
+    text-align: center;
+
+    @media (min-width: $screen-width-medium) {
+      text-align: justify;
+    }
+  }
+}

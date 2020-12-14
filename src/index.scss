@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Abel';
+  src: url('./fonts/Abel-Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Bondi';
+  src: url('./fonts/Bondi.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sonder Slab';
+  src: url('./fonts/SonderSerif-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sonder Slab Rough';
+  src: url('./fonts/SonderSerif-BoldRough.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sonder Sans';
+  src: url('./fonts/SonderSans-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sonder Sans Rough';
+  src: url('./fonts/SonderSans-BlackRough.otf') format('opentype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Abel', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
