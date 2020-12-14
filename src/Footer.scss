@@ -1,43 +1,29 @@
 @import './include.scss';
 
+.footer {
+  background-color: $black;
+  color: $white;
 
-footer{
-    background-color: $black;
-    .partner{
-        img{
-            width:50px;
-            margin: auto;
-            display: block;
-            padding-top: 20px;
-        }
-    }
-    .main-container{
-        padding-top:30px;
-        padding-bottom: 100px;
-    }
-    p{
-        color:white;
-        text-align: center;
-        font-family: 'Sonder Slab';
-        font-size:30px;
-    }
-}
+  @media (min-width: $screen-width-medium) {
+    display: flex;
+  }
 
-@media (max-width: 600px) {
-    .bar {
-        border-bottom: 2px solid white;
-        margin: 0px 30px;
-    }
-    .underbar{
-        margin-top: 20px;
-    }
-    .mobile-pad{
-        margin-bottom: 50px;
-    }
-}
+  &-part {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-@media (min-width: 600px) {
-   .partner{
-       width:75%;
-   }
+  &-title {
+    margin: 1rem;
+    font-family: 'Sonder Sans';
+    font-size: 1.4rem;
+  }
+
+  &-logo {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+  }
 }
