@@ -166,7 +166,7 @@ const conferences = [
     id: 10,
     title: 'Gestion des flux',
     subtitle: '',
-    description: 'Voitures, piétons, transports en commun, services publics, électricité, eau : De nombreux flux parcourent nos villes en tout temps. Quelles sont les relations que la Smart City entretient avec ces flux ? Et surtout, par quels moyens peut-elle les fluidifier, aujourd\'hui et dans les années à l\'avenir ? Nous nous efforcerons de répondre à ces questions sur l\'heure qui nous a été allouée.',
+    description: 'Voitures, piétons, transports en commun, services publics, électricité, eau : De nombreux flux parcourent nos villes en tout temps. Quelles sont les relations que la Smart City entretient avec ces flux ? Et surtout, par quels moyens peut-elle les fluidifier, aujourd\'hui et dans les années à l\'avenir ? Nous allons nous focaliser sur les flux de personnes dans cette conférence et nous nous efforcerons de répondre à ces questions sur l\'heure qui nous a été allouée.',
     image: 'image url',
     presenters: [
       'Maximilien Fonteyn',
