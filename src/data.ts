@@ -123,7 +123,7 @@ const conferences = [
   {
     id: 7,
     title: 'Fermes urbaines',
-    subtitle: '',
+    subtitle: 'Présentation des fermes urbaines et de ses enjeux et innovations.',
     description: 'Notre conférence présentera le sujet des fermes urbaines, traitera de leur état ainsi que leur place dans la smart city et industrie 4.0. Nous commencerons sur un état de l\'art suivi de pistes d\'améliorations et les innovations.',
     image: 'image url',
     presenters: [
@@ -250,17 +250,17 @@ const conferences = [
 const rooms = [
   {
     id: 0,
-    name: 'AMPHITHEATRE',
-    live: 'https://www.youtube.com/embed/0000000000'
-  },
-  {
-    id: 1,
     name: 'SALLE 1',
     live: 'https://www.youtube.com/embed/0000000000'
   },
   {
-    id: 2,
+    id: 1,
     name: 'SALLE 2',
+    live: 'https://www.youtube.com/embed/0000000000'
+  },
+  {
+    id: 2,
+    name: 'SALLE 3',
     live: 'https://www.youtube.com/embed/0000000000'
   }
 ];
