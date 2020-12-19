@@ -33,6 +33,11 @@ const config: Configuration = {
       template: './src/index.html',
       favicon: './src/images/logo-light.svg',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      favicon: './src/images/logo-light.svg',
+      filename: '404.html'
+    })
   ]
 };
 
