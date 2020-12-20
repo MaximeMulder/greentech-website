@@ -1,15 +1,17 @@
+import EslintWebpackPlugin from 'eslint-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 import { Configuration } from 'webpack';
 
 const config: Configuration = {
-  entry: './src/index.tsx',
+  context: path.resolve(__dirname, 'src'),
+  entry: './index.tsx',
   module: {
     rules: [
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'ts-loader', 'eslint-loader']
+        use: ['babel-loader', 'ts-loader']
       },
       {
         test: /\.scss$/,
@@ -22,20 +24,23 @@ const config: Configuration = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.js', '.ts', '.tsx']
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: 'main.js'
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      favicon: './src/images/logo-light.svg',
+    new EslintWebpackPlugin({
+      extensions: ['ts', 'tsx']
     }),
     new HtmlWebpackPlugin({
-      template: './src/index.html',
-      favicon: './src/images/logo-light.svg',
+      template: './index.html',
+      favicon: './images/logo-light.svg'
+    }),
+    new HtmlWebpackPlugin({
+      template: './index.html',
+      favicon: './images/logo-light.svg',
       filename: '404.html'
     })
   ]
