@@ -16,21 +16,12 @@ class Header extends Component<{}, HeaderState> {
       burger: false
     };
 
-    this.burger = this.burger.bind(this);
+    this.toggle = this.toggle.bind(this);
+    this.fold = this.fold.bind(this);
   }
 
   componentDidMount(): void {
-    const handler = () => this.setState(() => ({
-      burger: false,
-    }));
-
-    window.matchMedia('(min-width: 860px)').addEventListener('change', handler);
-  }
-
-  burger(): void {
-    this.setState((state) => ({
-      burger: !state.burger
-    }));
+    window.matchMedia('(min-width: 860px)').addEventListener('change', this.fold);
   }
 
   render(): ReactElement {
@@ -39,15 +30,27 @@ class Header extends Component<{}, HeaderState> {
         <Link to="/">
           <img className="header-logo" src={logo} alt="Logo GreenTech" />
         </Link>
-        <img className="header-burger" src={burger} alt="Burger menu" onClick={this.burger} />
+        <img className="header-burger" src={burger} alt="Burger menu" onClick={this.toggle} />
         <nav className={'header-navigation' + (this.state.burger ? ' active' : '')}>
-          <NavLink className="header-link" exact to="/">PRESENTATION</NavLink>
-          <NavLink className="header-link" to="/conferences">CONFERENCES</NavLink>
-          <NavLink className="header-link" to="/planning">PLANNIFICATION</NavLink>
-          <NavLink className="header-link" to="/lives">DIFFUSIONS</NavLink>
+          <NavLink className="header-link" exact to="/" onClick={this.fold}>PRESENTATION</NavLink>
+          <NavLink className="header-link" to="/conferences" onClick={this.fold}>CONFERENCES</NavLink>
+          <NavLink className="header-link" to="/planning" onClick={this.fold}>PLANNIFICATION</NavLink>
+          <NavLink className="header-link" to="/lives" onClick={this.fold}>DIFFUSIONS</NavLink>
         </nav>
       </header>
     );
+  }
+
+  toggle(): void {
+    this.setState((state) => ({
+      burger: !state.burger
+    }));
+  }
+
+  fold(): void {
+    this.setState({
+      burger: false
+    });
   }
 }
 
