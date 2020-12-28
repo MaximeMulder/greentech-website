@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 
-import mail from '../images/mail.png';
-import linkedin from '../images/linkedin.png';
+import mail from '../images/mail.svg';
+import linkedin from '../images/linkedin.svg';
 import twitter from '../images/twitter.svg';
 import './Footer.scss';
 
