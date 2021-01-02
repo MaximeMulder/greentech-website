@@ -61,7 +61,7 @@ const conferences = [
     ],
     room: 2,
     begin: 1610109000,
-    end: 1610111400
+    end: 1610111700
   },
   {
     id: 3,
@@ -74,7 +74,7 @@ const conferences = [
       'Corentin Dragée',
     ],
     room: 2,
-    begin: 1610111400,
+    begin: 1610111700,
     end: 1610114400
   },
   {
@@ -88,7 +88,7 @@ const conferences = [
       'Yanis Mercier',
     ],
     room: 1,
-    begin: 1610111400,
+    begin: 1610111700,
     end: 1610114400
   },
   {
@@ -132,7 +132,7 @@ const conferences = [
       'Elian Hamon',
     ],
     room: 0,
-    begin: 1610093100,
+    begin: 1610092800,
     end: 1610096400
   },
   {
@@ -147,7 +147,7 @@ const conferences = [
     ],
     room: 0,
     begin: 1610109000,
-    end: 1610111400
+    end: 1610111700
   },
   {
     id: 9,
@@ -174,7 +174,7 @@ const conferences = [
       'Yoann Bernard',
     ],
     room: 1,
-    begin: 1610093100,
+    begin: 1610092800,
     end: 1610096400
   },
   {
@@ -202,7 +202,7 @@ const conferences = [
       'Mahdi Chaabouni',
     ],
     room: 2,
-    begin: 1610093100,
+    begin: 1610092800,
     end: 1610096400
   },
   {
@@ -216,7 +216,7 @@ const conferences = [
     ],
     room: 1,
     begin: 1610109000,
-    end: 1610110200
+    end: 1610109900
   },
   {
     id: 14,
@@ -228,8 +228,8 @@ const conferences = [
       'Celia Henry',
     ],
     room: 1,
-    begin: 1610110200,
-    end: 1610111400
+    begin: 1610109900,
+    end: 1610111700
   },
   {
     id: 15,
@@ -242,7 +242,7 @@ const conferences = [
       'Clément Lesage',
     ],
     room: 0,
-    begin: 1610111400,
+    begin: 1610111700,
     end: 1610114400
   },
 ];
