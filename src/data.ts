@@ -37,7 +37,7 @@ const conferences = [
     id: 1,
     title: 'Cloud computing',
     subtitle: 'L\'utilisation du Cloud Computing dans la gestion de la ville.',
-    description: 'L\'évolution continuelle des technologies numériques nous montre au quotidien que la ville de demain sera en grande partie, si ce n\'est entièrement, connectée. De nouveaux services numériques voient le jour, tandis que d\'autres bénéficies des avancées technologiques permettant d\'améliorer la qualité des services actuels. Les différentes applications du cloud computing illustrent parfaitement cet exemple. En effet, certains services du cloud d\'aujourd\'hui évoluent tandis que d\'autres essayent de faire leurs preuves comme c\'est le cas pour le cloud gaming. Notre objectif de recherche sera d\'étudier et tenter de prévoir l\'évolution de ces technologies. Nos travaux porteront donc sur le développement des technologies du cloud, leur adoption ainsi que les nouvelles branches du cloud qui selon nous pourraient émerger ces prochaines années dans le cas d\'une ville durable et/ou de l\'industrie 4.0.',
+    description: 'L\'évolution continuelle des technologies numériques nous montre au quotidien que la ville de demain sera en grande partie, si ce n\'est entièrement, connectée. De nouveaux services numériques voient le jour, tandis que d\'autres bénéficient des avancées technologiques permettant d\'améliorer la qualité des services actuels. Les différentes applications du cloud computing illustrent parfaitement cet exemple. En effet, certains services du cloud d\'aujourd\'hui évoluent tandis que d\'autres essayent de faire leurs preuves comme c\'est le cas pour le cloud gaming. Notre objectif de recherche sera d\'étudier et tenter de prévoir l\'évolution de ces technologies. Nos travaux porteront donc sur le développement des technologies du cloud, leur adoption ainsi que les nouvelles branches du cloud qui selon nous pourraient émerger ces prochaines années dans le cas d\'une ville durable et/ou de l\'industrie 4.0.',
     image: 'image url',
     presenters: [
       'Antoine Savalle',
@@ -53,7 +53,7 @@ const conferences = [
     id: 2,
     title: 'Cybersécurité des smart city',
     subtitle: 'Les enjeux de sécurité impliqués par l\'évolution des technologies dans les villes.',
-    description: 'Nous allons parler de la cybersécurité des Smart Cities hier, aujourd\'hui et allons donner nos prévisions pour les 5 années à venir',
+    description: 'Nous allons parler de la cybersécurité des Smart Cities d\'hier et d\'aujourd\'hui et allons donner nos prévisions pour les 5 années à venir.',
     image: 'image url',
     presenters: [
       'Julien Zolli',
@@ -67,7 +67,7 @@ const conferences = [
     id: 3,
     title: 'Fluidifier le trafic',
     subtitle: 'L\'utilisation des nouvelles technologies pour optimiser le trafic.',
-    description: 'La gestion des embouteillages est l\'un des enjeux principaux au sein des smart cities car il a un impact sur la réduction de la pollution atmosphérique et sonore. L\'IA et le Machine Learning peuvent être utilisé pour fluidifier le trafic, l\'IA accumule de nombreuses données sur le trafic puis les analysent afin de prendre une décision afin d\'améliorer le trafic. Par exemple, l\'IA peut détecter des embouteillages sur une route et peut décider de dévier le trafic grâce aux feux de circulations.',
+    description: 'La gestion des embouteillages est l\'un des enjeux principaux au sein des smart cities car il a un impact sur la réduction de la pollution atmosphérique et sonore. L\'IA et le Machine Learning peuvent être utilisés pour fluidifier le trafic, l\'IA accumule de nombreuses données sur le trafic puis les analyse afin de prendre une décision pour améliorer le trafic. Par exemple, l\'IA peut détecter des embouteillages sur une route et peut décider de dévier le trafic grâce aux feux de circulations.',
     image: 'image url',
     presenters: [
       'Kévin Huard',
@@ -81,7 +81,7 @@ const conferences = [
     id: 4,
     title: 'Télécommunications',
     subtitle: 'Permettre un accès continu à internet dans toute la métropole.',
-    description: 'Dans cette conférence nous aborderons le sujet de l\'accès à internet dans nos villes de demain. Premièrement, nous présenterons des problèmes soulevés par le manque d\'accès à internet en ville, puis des exemples de cas d\'utilisation possible grâce à la mise en place d\'un accès à internet dans la métropole. Ensuite, nous parlerons des technologies innovantes en rapport notre problématiques. Pour conclure nous présenterons une étude de faisabilité de ce projet a l\'échelle d\'une métropole.',
+    description: 'Dans cette conférence nous aborderons le sujet de l\'accès à internet dans nos villes de demain. Premièrement, nous présenterons des problèmes soulevés par le manque d\'accès à internet en ville, puis des exemples de cas d\'utilisation possible grâce à la mise en place d\'un accès à internet dans la métropole. Ensuite, nous parlerons des technologies innovantes en rapport notre problématique. Pour conclure nous présenterons une étude de faisabilité de ce projet à l\'échelle d\'une métropole.',
     image: 'image url',
     presenters: [
       'Victor Personnettaz',
@@ -94,8 +94,8 @@ const conferences = [
   {
     id: 5,
     title: 'Énergies',
-    subtitle: 'CO² et réchauffement climatique : au pire on mettra des tee shirts.',
-    description: 'Conférence sur le thème du réchauffement climatique qui aura pour but de vous présenter quelques points intéressant du dernier rapport du GIEC!',
+    subtitle: 'CO² et réchauffement climatique : au pire on mettra des tee-shirts.',
+    description: 'Conférence sur le thème du réchauffement climatique qui aura pour but de vous présenter quelques points intéressants du dernier rapport du GIEC!',
     image: 'image url',
     presenters: [
       'Paul Fontaine',
@@ -108,7 +108,7 @@ const conferences = [
     id: 6,
     title: 'Liberté des citoyens',
     subtitle: 'Problèmes et protections de la vie privée dans la Smart City.',
-    description: 'Nous étudierons la place de la vie privée dans les smart city. Quels sont les problèmes liés. Quels sont les lois qui protège la vie prive aujourd\'hui. Etude de cas de la Chine. Les solutions que nous proposons.',
+    description: 'Nous étudierons la place de la vie privée dans la smart city. Quels sont les problèmes liés ? Quelles sont les lois qui protègent la vie prive aujourd\'hui ? Etude de cas de la Chine. Les solutions que nous proposons.',
     image: 'image url',
     presenters: [
       'Etienne Jouvençon',
@@ -153,7 +153,7 @@ const conferences = [
     id: 9,
     title: 'Voitures autonomes',
     subtitle: 'Les impacts de la voiture autonome sur la société de demain.',
-    description: 'Partant du postulat que la voiture autonome fera partie du champs de l\'IOT (Internet of Things) et que l\'évolution du MaaS (Mobille as a Service) mettra fin au rapport qu\'on a avec nos voitures individuelles, on est en droit de se demander quels en seront l\'impact sur notre société et nos infrastructures ?',
+    description: 'Partant du postulat que la voiture autonome fera partie du champ de l\'IOT (Internet of Things) et que l\'évolution de la MaaS (Mobility as a Service) mettra fin au rapport que nous avons avec nos voitures individuelles, nous sommes en droit de nous demander quels en seront l\'impact sur notre société et nos infrastructures ?',
     image: 'image url',
     presenters: [
       'Antoine Morlet',
@@ -194,7 +194,7 @@ const conferences = [
     id: 12,
     title: 'Portefeuille numérique',
     subtitle: '',
-    description: 'De nos jours, nos papiers personnels sont très importants dans notre vie quotidienne et surtout avec le confinement, la situation va être de plus en plus compliquée puisque à chaque sorti, on doit être muni d\'une attestation de déplacement et un justificatif d\'identité. Note solution est d\'informatiser tous les cartes personnelles comme la carte d\'identité et la carte bancaire et réaliser un profile numérique qui contiens tous les coordonnés personnelles pour éliminer les carte tangible, alors on va réaliser un système de contrôle d\'accès biométrique qui se base sur la reconnaissance de l\'iris liées avec un système de reconnaissance faciale en 3D qui est liée directement avec le cloud. On va appliquer cette solution pour faire des paiement sans besoin d\'apporter une carte bancaire et même sans besoin de retenir des mot de passe, notre solution est un moyen pour facilité le paiement n\'importe ou (autoroute, caisse en magasin, pharmacie etc….)',
+    description: 'De nos jours, nos papiers personnels sont très importants dans notre vie quotidienne et surtout avec le confinement, la situation va être de plus en plus compliquée puisqu\'à chaque sortie, on doit être muni d\'une attestation de déplacement et un justificatif d\'identité. Notre solution est d\'informatiser toutes les cartes personnelles comme la carte d\'identité et la carte bancaire et réaliser un profil numérique qui contient toutes les coordonnés personnelles pour éliminer les cartes tangibles, alors on va réaliser un système de contrôle d\'accès biométrique qui se base sur la reconnaissance de l\'iris liée avec un système de reconnaissance faciale en 3D qui est liée directement avec le cloud. On va appliquer cette solution pour faire des paiements sans besoin d\'apporter une carte bancaire et même sans besoin de retenir des mots de passe, notre solution est un moyen pour faciliter le paiement n\'importe où (autoroute, caisse en magasin, pharmacie, etc….).',
     image: 'image url',
     presenters: [
       'Alaeddine Abdelkafi',
@@ -209,7 +209,7 @@ const conferences = [
     id: 13,
     title: 'Propreté et durabilité',
     subtitle: 'La gestion des déchets dans les villes.',
-    description: 'Nous parlerons de la gestion intelligente des déchets au seins des smart city, des technologies existantes, l\'évolution et l\'historique de celle-ci.',
+    description: 'Nous parlerons de la gestion intelligente des déchets au sein des smart cities, des technologies existantes, l\'évolution et l\'historique de celles-ci.',
     image: 'image url',
     presenters: [
       'Nils Montier',
@@ -222,7 +222,7 @@ const conferences = [
     id: 14,
     title: 'Smart buildings',
     subtitle: 'Les enjeux et les risques des Smart Buildings au sein de la Smart City.',
-    description: 'Les Smart Buildings seront la base pour une transition vers les Smarts Cities. Il est donc important de comprendre les enjeux, autant écologique qu\'économique, des bâtiments des villes de demain, mais aussi les risques qui peuvent être engendrés par un développement de ces smart buildings.',
+    description: 'Les Smart Buildings seront la base pour une transition vers les Smarts Cities. Il est donc important de comprendre les enjeux, autant écologiques qu\'économiques, des bâtiments des villes de demain, mais aussi les risques qui peuvent être engendrés par un développement de ces smart buildings.',
     image: 'image url',
     presenters: [
       'Celia Henry',
