@@ -111,7 +111,7 @@ const conferences = [
     description: 'Nous étudierons la place de la vie privée dans les smart city. Quels sont les problèmes liés. Quels sont les lois qui protège la vie prive aujourd\'hui. Etude de cas de la Chine. Les solutions que nous proposons.',
     image: 'image url',
     presenters: [
-      'Etienne Jouvançon',
+      'Etienne Jouvençon',
       'Jean-Marc Meschin',
       'Julien His',
       'Romain Jouatte',
