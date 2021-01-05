@@ -37,7 +37,7 @@ const config: Configuration = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '',
+    publicPath: '/',
     filename: 'main.js'
   },
   plugins: [
