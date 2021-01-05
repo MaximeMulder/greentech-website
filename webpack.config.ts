@@ -1,9 +1,14 @@
 import EslintWebpackPlugin from 'eslint-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import path from 'path';
 import { Configuration } from 'webpack';
 
+const mode = process.env.NODE_ENV as 'development' | 'production';
+const dev = mode === 'development';
+
 const config: Configuration = {
+  mode,
   context: path.resolve(__dirname, 'src'),
   entry: './index.tsx',
   module: {
@@ -15,7 +20,11 @@ const config: Configuration = {
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: [
+          dev ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader'
+        ]
       },
       {
         test: /\.(jpg|png|svg|woff|woff2|eot|ttf|otf)$/,
@@ -28,6 +37,7 @@ const config: Configuration = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '',
     filename: 'main.js'
   },
   plugins: [
@@ -42,7 +52,8 @@ const config: Configuration = {
       template: './index.html',
       favicon: './images/logo-light.svg',
       filename: '404.html'
-    })
+    }),
+    new MiniCssExtractPlugin()
   ]
 };
 
