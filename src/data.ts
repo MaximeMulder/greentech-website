@@ -12,6 +12,7 @@ export interface ConferenceData {
   image: string;
   presenters: string[];
   room: number;
+  url: string;
   begin: number;
   end: number;
 }
@@ -30,6 +31,7 @@ const conferences = [
       'Enzo Billis',
     ],
     room: 0,
+    url: 'https://www.youtube.com/embed/O8924ALg9TE',
     begin: 1610100000,
     end: 1610105400
   },
@@ -46,6 +48,7 @@ const conferences = [
       'Pierre Hamel',
     ],
     room: 1,
+    url: 'https://www.youtube.com/embed/zn_o-vys5YM',
     begin: 1610100000,
     end: 1610105400
   },
@@ -60,6 +63,7 @@ const conferences = [
       'Nicolas Van-hove',
     ],
     room: 2,
+    url: 'https://www.youtube.com/embed/xJu0EGYoki0',
     begin: 1610109000,
     end: 1610111700
   },
@@ -74,6 +78,7 @@ const conferences = [
       'Corentin Dragée',
     ],
     room: 2,
+    url: 'https://www.youtube.com/embed/L1FM8nROPpo',
     begin: 1610111700,
     end: 1610114400
   },
@@ -88,6 +93,7 @@ const conferences = [
       'Yanis Mercier',
     ],
     room: 1,
+    url: 'https://www.youtube.com/embed/TW3-y_gkGbE',
     begin: 1610111700,
     end: 1610114400
   },
@@ -101,6 +107,7 @@ const conferences = [
       'Paul Fontaine',
     ],
     room: 0,
+    url: 'https://www.youtube.com/embed/ofVIeTpgx68',
     begin: 1610096400,
     end: 1610098200
   },
@@ -117,6 +124,7 @@ const conferences = [
       'Romain Jouatte',
     ],
     room: 2,
+    url: 'https://www.youtube.com/embed/L3cbTYgE5Y0',
     begin: 1610100000,
     end: 1610105400
   },
@@ -132,6 +140,7 @@ const conferences = [
       'Elian Hamon',
     ],
     room: 0,
+    url: 'https://www.youtube.com/embed/tr9waww_blM',
     begin: 1610092800,
     end: 1610096400
   },
@@ -146,6 +155,7 @@ const conferences = [
       'Antonin Paul',
     ],
     room: 0,
+    url: 'https://www.youtube.com/embed/t1f3JCXqfJ8',
     begin: 1610109000,
     end: 1610111700
   },
@@ -159,6 +169,7 @@ const conferences = [
       'Antoine Morlet',
     ],
     room: 2,
+    url: 'https://www.youtube.com/embed/nptCv0lEaXA',
     begin: 1610096400,
     end: 1610098200
   },
@@ -174,6 +185,7 @@ const conferences = [
       'Yoann Bernard',
     ],
     room: 1,
+    url: 'https://www.youtube.com/embed/Zr8s3e49Yjk',
     begin: 1610092800,
     end: 1610096400
   },
@@ -187,6 +199,7 @@ const conferences = [
       'Gabriel Lesourd',
     ],
     room: 1,
+    url: 'https://www.youtube.com/embed/rt1s_1KqROs',
     begin: 1610096400,
     end: 1610098200
   },
@@ -202,6 +215,7 @@ const conferences = [
       'Mahdi Chaabouni',
     ],
     room: 2,
+    url: 'https://www.youtube.com/embed/tnjHe2KevF8',
     begin: 1610092800,
     end: 1610096400
   },
@@ -215,6 +229,7 @@ const conferences = [
       'Nils Montier',
     ],
     room: 1,
+    url: 'https://www.youtube.com/embed/ineF0sD2GSQ',
     begin: 1610109000,
     end: 1610109900
   },
@@ -228,6 +243,7 @@ const conferences = [
       'Celia Henry',
     ],
     room: 1,
+    url: 'https://www.youtube.com/embed/bUflWWyhSRM',
     begin: 1610109900,
     end: 1610111700
   },
@@ -242,9 +258,10 @@ const conferences = [
       'Clément Lesage',
     ],
     room: 0,
+    url: 'https://www.youtube.com/embed/AvuV5_xLseY',
     begin: 1610111700,
     end: 1610114400
-  },
+  }
 ];
 
 const rooms = [
