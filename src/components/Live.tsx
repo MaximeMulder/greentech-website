@@ -13,7 +13,7 @@ function Live(): ReactElement {
   const room = getRoom(Number(useParams<LiveParams>().live));
   const conferences = getRoomConferences(room);
   const current_time = (new Date()).getTime() / 1000;
-  const current_conference: ConferenceData = conferences.find((a) => (room.id == a.room && a.begin <= current_time && current_time <= a.end));
+  const current_conference: ConferenceData = conferences.find((a) => (a.begin <= current_time && current_time <= a.end));
   return (
     <div className="live">
       <iframe className="live-video" src={current_conference ? current_conference.url : room.live} title={room.name} />
