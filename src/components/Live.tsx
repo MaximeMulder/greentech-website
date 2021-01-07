@@ -37,7 +37,7 @@ function Live(): ReactElement {
           'CONFERENCE EN COURS :'
         )}
         <br />
-        {time > conference.begin ? (
+        {time >= conference.begin ? (
           conference.title
         ) : (
           <Timer time={conference.begin} />
