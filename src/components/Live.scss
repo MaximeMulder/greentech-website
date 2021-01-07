@@ -1,4 +1,5 @@
 .live {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,17 +9,15 @@
     height: 420px;
   }
 
-  &-conf-title, &-timer {
+  &-description {
     margin: 1rem;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
     font-family: 'Sonder Sans';
     font-size: 1.6rem;
-  }
-
-  &-catchphrase {
-    margin: 1rem;
   }
 }
