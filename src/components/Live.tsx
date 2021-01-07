@@ -18,11 +18,9 @@ function Live(): ReactElement {
     const nexts = conferences.filter((conference) => time < conference.begin);
     if (nexts.length > 0) {
       conference = nexts.reduce((a, b) => a.begin < b.begin ? a : b);
+    } else {
+      conference = conferences.reduce((a, b) => a.begin > b.begin ? a : b);
     }
-  }
-
-  if (!conference) {
-    conference = conferences.reduce((a, b) => a.begin > b.begin ? a : b);
   }
 
   return (
