@@ -18,7 +18,7 @@ const Presentation = (): ReactElement => (
     </div>
     <div className="presentation-timer">
       <div className="presentation-catchphrase">DEBUT DES CONFERENCES DANS:</div>
-      <Timer time={getConferences().sort((a, b) => a.begin - b.begin)[0].begin} />
+      <Timer time={getConferences().reduce((a, b) => a.begin < b.begin ? a : b).begin} />
     </div>
   </React.Fragment>
 );
