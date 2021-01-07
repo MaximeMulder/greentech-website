@@ -32,7 +32,7 @@ class Timer extends React.Component<TimerProps, TimerState> {
     const date = new Date(this.state.time);
     return (
       <React.Fragment>
-        {Math.ceil(date.getTime() / (24 * 60 * 60 * 1000))} JOURS {date.getUTCHours()} HEURES {date.getUTCMinutes()} MINUTES {date.getUTCSeconds()} SECONDES
+        {Math.floor(date.getTime() / (24 * 60 * 60 * 1000))} JOURS {date.getUTCHours()} HEURES {date.getUTCMinutes()} MINUTES {date.getUTCSeconds()} SECONDES
       </React.Fragment>
     );
   }
