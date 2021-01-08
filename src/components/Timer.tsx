@@ -39,7 +39,7 @@ class Timer extends React.Component<TimerProps, TimerState> {
 
   update(): void {
     this.setState({
-      time: this.props.time * 1000 - Date.now()
+      time: Math.max(this.props.time * 1000 - Date.now())
     });
   }
 }
