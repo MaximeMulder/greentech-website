@@ -48,6 +48,10 @@
 
     padding: 1rem;
     flex: 1 0;
+
+    .conference:hover & {
+      border-color: $green-dark;
+    }
   }
 
   &-title {
@@ -110,6 +114,10 @@
     background-color: $green;
     font-weight: bold;
     color: $white;
+
+    &:hover {
+      background-color: $green-dark;
+    }
   }
 
   &-content {

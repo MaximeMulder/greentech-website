@@ -64,6 +64,10 @@
     font-family: 'Sonder Sans';
     font-size: 1.6rem;
     color: $black;
+
+    &:hover {
+      background-color: $green-dark;
+    }
   }
 
   &-timer {
