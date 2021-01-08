@@ -25,7 +25,7 @@ function Live(): ReactElement {
 
   return (
     <div className="live">
-      <iframe className="live-video" src={conference.url} title={conference.title} />
+      <iframe className="live-video" src={conference.url} title={conference.title} allowFullScreen />
       <div className="live-description">
         {time < conference.begin ? (
           'LA PROCHAINE CONFERENCE DEBUTE DANS :'
