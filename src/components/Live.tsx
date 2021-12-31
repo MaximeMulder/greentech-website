@@ -5,12 +5,8 @@ import { getRoomConferences, getRoom } from '../data';
 
 import './Live.scss';
 
-interface LiveParams {
-  live: string,
-}
-
 function Live(): ReactElement {
-  const room = getRoom(Number(useParams<LiveParams>().live));
+  const room = getRoom(Number(useParams().live));
   const conferences = getRoomConferences(room);
   const time = Date.now() / 1000;
   let conference = conferences.find((conference) => time >= conference.begin && time <= conference.end);

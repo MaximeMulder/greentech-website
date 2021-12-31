@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Content from './Content';
 import PlanningProxy from './PlanningProxy';
 import PlanningRoom from './PlanningRoom';
@@ -43,10 +43,10 @@ class Planning extends React.Component<{}, PlanningState> {
         ) : (
           <React.Fragment>
             <Rooms to="/planning/" />
-            <Switch>
-              <Route path="/planning/:room" component={PlanningProxy} />
-              <Redirect to="/planning/0" />
-            </Switch>
+            <Routes>
+              <Route path=":room" element={<PlanningProxy />} />
+              <Route path="*" element={<Navigate to="/planning/0" />} />
+            </Routes>
           </React.Fragment>
         )}
       </Content>

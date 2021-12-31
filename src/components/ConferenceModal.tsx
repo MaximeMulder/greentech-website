@@ -12,7 +12,7 @@ interface ConferenceModalProps {
 }
 
 const ConferenceModal = (props: ConferenceModalProps): ReactElement => {
-  const date: Date = new Date(props.conference.begin * 1000);
+  const date = new Date(props.conference.begin * 1000);
   return (
     <div className="modal">
       <div className="modal-block">

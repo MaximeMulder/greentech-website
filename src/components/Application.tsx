@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Conferences from './Conferences';
 import Footer from './Footer';
@@ -16,12 +16,12 @@ const Application = (): ReactElement => (
     <ModalProvider>
       <div className="application">
         <Header />
-        <Switch>
-          <Route exact path="/" component={Presentation} />
-          <Route path="/conferences" component={Conferences} />
-          <Route path="/planning" component={Planning} />
-          <Route path="/lives" component={Lives} />
-        </Switch>
+        <Routes>
+          <Route path="/*" element={<Presentation />} />
+          <Route path="/conferences" element={<Conferences />} />
+          <Route path="/planning/*" element={<Planning />} />
+          <Route path="/lives/*" element={<Lives />} />
+        </Routes>
         <Footer />
       </div>
     </ModalProvider>

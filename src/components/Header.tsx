@@ -32,7 +32,7 @@ class Header extends Component<{}, HeaderState> {
         </Link>
         <img className="header-burger" src={burger} alt="Burger menu" onClick={this.toggle} />
         <nav className={'header-navigation' + (this.state.burger ? ' active' : '')}>
-          <NavLink className="header-link" exact to="/" onClick={this.fold}>PRESENTATION</NavLink>
+          <NavLink className="header-link" end to="/" onClick={this.fold}>PRESENTATION</NavLink>
           <NavLink className="header-link" to="/conferences" onClick={this.fold}>CONFERENCES</NavLink>
           <NavLink className="header-link" to="/planning" onClick={this.fold}>PLANIFICATION</NavLink>
           <NavLink className="header-link" to="/lives" onClick={this.fold}>DIFFUSIONS</NavLink>

@@ -22,16 +22,27 @@ const config: Configuration = {
         test: /\.scss$/,
         use: [
           dev ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
+          //'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 2,
+              // 0 => no loaders (default);
+              // 1 => postcss-loader;
+              // 2 => postcss-loader, sass-loader
+            },
+          },
           'sass-loader'
         ]
       },
       {
         test: /\.(jpg|png|svg|woff|woff2|eot|ttf|otf)$/,
-        loader: 'file-loader',
+        type: 'asset/resource'
+        /*loader: 'file-loader',
         options: {
-          publicPath: '/'
-        }
+          publicPath: '/greentech-pages/'
+        },
+        type: 'javascript/auto' */
       }
     ],
   },
@@ -40,7 +51,7 @@ const config: Configuration = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    publicPath: '/greentech-pages/',
     filename: 'main.js'
   },
   plugins: [
