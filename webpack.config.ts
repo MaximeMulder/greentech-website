@@ -2,10 +2,11 @@ import EslintWebpackPlugin from 'eslint-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import path from 'path';
-import { Configuration } from 'webpack';
+import webpack, { Configuration } from 'webpack';
 
 const mode = process.env.NODE_ENV as 'development' | 'production';
 const dev = mode === 'development';
+const base = dev ? '/' : '/greentech-pages/';
 
 const config: Configuration = {
   mode,
@@ -37,12 +38,13 @@ const config: Configuration = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/greentech-pages/',
+    publicPath: base,
     filename: 'main.js'
   },
   plugins: [
     new EslintWebpackPlugin({
-      extensions: ['ts', 'tsx']
+      extensions: ['ts', 'tsx'],
+      failOnError: !dev
     }),
     new HtmlWebpackPlugin({
       template: './index.html',
@@ -53,7 +55,10 @@ const config: Configuration = {
       favicon: './images/logo-light.svg',
       filename: '404.html'
     }),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin(),
+    new webpack.DefinePlugin({
+      BASEPATH: JSON.stringify(base)
+    })
   ]
 };
 

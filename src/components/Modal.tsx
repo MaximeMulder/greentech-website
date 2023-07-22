@@ -1,5 +1,9 @@
 import React, { ReactElement, ReactNode } from 'react';
 
+import close from '../images/close.svg';
+
+import './Modal.scss';
+
 interface ModalProviderProps {
   children: ReactNode;
 }
@@ -10,9 +14,30 @@ const ModalProvider = (props: ModalProviderProps): ReactElement => {
   const [modal, setModal] = React.useState<ReactElement>(null);
   return (
     <ModalContext.Provider value={setModal}>
-      {props.children}
+      <div className={'modal-wrapper' + (modal ? ' modal-open' : '')}>
+        {props.children}
+      </div>
       {modal}
     </ModalContext.Provider>
+  );
+};
+
+interface ModalProps {
+  children: ReactNode;
+  setModal: (element: ReactElement) => void;
+}
+
+const Modal = (props: ModalProps) => {
+  return (
+    <div className="modal">
+      <div className="modal-window">
+        <img className="modal-close" src={close} onClick={() => props.setModal(null)} />
+        <div className="modal-content">
+          {props.children}
+        </div>
+      </div>
+      <div className="modal-overlay" onClick={() => props.setModal(null)}></div>
+    </div>
   );
 };
 
@@ -24,4 +49,5 @@ function withModal<P>(Component: React.ComponentType<P>): React.ElementType {
   );
 }
 
+export default Modal;
 export { ModalProvider, withModal };

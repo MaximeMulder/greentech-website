@@ -17,6 +17,10 @@
     @include card;
 
     position: relative;
+
+    &:hover {
+      border-color: $green-dark;
+    }
   }
 
   &-conference {
@@ -28,6 +32,19 @@
 
     &:not(:last-child) {
       border-bottom: 1px solid $grey;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      left: -10px;
+      top: 0;
+      bottom: 0;
     }
   }
 

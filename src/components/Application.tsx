@@ -12,7 +12,7 @@ import { ModalProvider } from './Modal';
 import './Application.scss';
 
 const Application = (): ReactElement => (
-  <BrowserRouter>
+  <BrowserRouter basename={BASEPATH}>
     <ModalProvider>
       <div className="application">
         <Header />

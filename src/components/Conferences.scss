@@ -25,7 +25,8 @@
 
     @media (min-width: $screen-width-medium) {
       padding: 2rem;
-      width: 10rem;
+      flex-shrink: 0;
+      flex-basis: 20%;
       flex-direction: column;
       justify-content: start;
       align-items: center;
@@ -47,7 +48,7 @@
     @include card;
 
     padding: 1rem;
-    flex: 1 0;
+    flex-grow: 1;
 
     .conference:hover & {
       border-color: $green-dark;
@@ -63,48 +64,6 @@
   &-subtitle {
     margin-bottom: 0.6rem;
   }
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  flex-direction: row-reverse;
-
-  &-overlay {
-    display: none;
-
-    @media (min-width: $screen-width-medium) {
-      display: block;
-      flex-grow: 1;
-      background-color: black;
-      opacity: 0.5;
-    }
-  }
-
-  &-block {
-    width: 100%;
-    display: flex;
-    padding: 1rem;
-    flex-direction: column;
-    background-color: $white;
-
-    @media (min-width: $screen-width-medium) {
-      width: 40%;
-    }
-  }
-
-  &-close {
-    width: 1.5rem;
-    height: 1.5rem;
-    padding: 1rem;
-    align-self: flex-end;
-    cursor: pointer;
-  }
 
   &-button {
     padding: 0.5rem 3rem;
@@ -117,15 +76,6 @@
 
     &:hover {
       background-color: $green-dark;
-    }
-  }
-
-  &-content {
-    padding: 2rem;
-    text-align: center;
-
-    @media (min-width: $screen-width-medium) {
-      text-align: justify;
     }
   }
 }

@@ -1,0 +1,69 @@
+@import '../include.scss';
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: row-reverse;
+
+  &-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+  }
+
+  &-open {
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  &-overlay {
+    display: none;
+
+    @media (min-width: $screen-width-medium) {
+      display: block;
+      flex-grow: 1;
+      background-color: black;
+      opacity: 0.5;
+    }
+  }
+
+  &-window {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: $white;
+    overflow-y: auto;
+
+    @media (min-width: $screen-width-medium) {
+      width: 40%;
+    }
+  }
+
+  &-close {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 1rem;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+
+  &-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media (min-width: $screen-width-medium) {
+      text-align: justify;
+    }
+  }
+}

@@ -5,7 +5,7 @@ import { getRoomConferences, getRoom } from '../data';
 
 import './Live.scss';
 
-function Live(): ReactElement {
+const Live = (): ReactElement => {
   const room = getRoom(Number(useParams().live));
   const conferences = getRoomConferences(room);
   const time = Date.now() / 1000;
@@ -32,13 +32,17 @@ function Live(): ReactElement {
         )}
         <br />
         {time >= conference.begin ? (
-          conference.title
+          normalize(conference.title)
         ) : (
           <Timer time={conference.begin} />
         )}
       </div>
     </div>
   );
+};
+
+function normalize(string: string) {
+  return string.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
 export default Live;
